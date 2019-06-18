@@ -11,6 +11,7 @@ Plug 'editorconfig/editorconfig-vim'
 call plug#end()
 
 set termguicolors     " enable true colors support
+set number
 syntax on
 color dracula
 
@@ -26,5 +27,5 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 map <C-+> <C-w>+
-map <C--> <C-w>- 
+map <C--> <C-w>-
 
