@@ -1,16 +1,14 @@
 call plug#begin('~/.local/share/nvim/plugged')
 
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'tmsvg/pear-tree' " Auto add pairs to quotes, brackets, etc...
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-
-" On-demand loading
 Plug 'scrooloose/nerdtree'
-Plug 'dracula/vim', { 'as': 'dracula' }
-
 Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}
 Plug 'sheerun/vim-polyglot'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'scrooloose/syntastic'
 
 " Git
 Plug 'tpope/vim-fugitive' " Git wrapper
@@ -46,6 +44,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'lucasprag/simpleblack'
 Plug 'jaredgorski/spacecamp'
 Plug 'fatih/molokai'
+Plug 'dracula/vim', { 'as': 'dracula' }
 
 " Vim airline
 Plug 'vim-airline/vim-airline'
@@ -54,7 +53,6 @@ Plug 'easymotion/vim-easymotion'
 
 call plug#end()
 
-set background = "dark"
 color dracula
 let g:airline_theme = 'one'
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
@@ -69,6 +67,7 @@ nnoremap <Leader>n :NERDTreeToggle<CR>
 nnoremap <Leader>m :NERDTreeFind<CR>
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>s :w<CR>
+nnoremap <Leader>sq :wq<CR>
 nnoremap <Leader>f :Files<CR>
 nnoremap <Leader>b :Buffers<CR>
 nnoremap <Leader>g :Ag<CR>
