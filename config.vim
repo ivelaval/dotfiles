@@ -42,6 +42,11 @@ Plug 'tpope/vim-surround'
 " Icons
 Plug 'ryanoasis/vim-devicons'
 
+" UI colors
+Plug 'lucasprag/simpleblack'
+Plug 'jaredgorski/spacecamp'
+Plug 'fatih/molokai'
+
 " Vim airline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -49,9 +54,13 @@ Plug 'easymotion/vim-easymotion'
 
 call plug#end()
 
+set background = "dark"
+color dracula
+let g:airline_theme = 'one'
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+set termguicolors     " enable true colors support
 set number
 syntax on
-color dracula
 set encoding=UTF-8
 
 map <space> <leader>
