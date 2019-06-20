@@ -1,9 +1,9 @@
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'tmsvg/pear-tree' " Auto add pairs to quotes, brackets, etc...
-Plug '/usr/local/opt/fzf' " Fuzzy find everything, change to install directory
-Plug 'junegunn/fzf.vim' " An interface to FZF
-  
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+
 " On-demand loading
 Plug 'scrooloose/nerdtree'
 Plug 'dracula/vim', { 'as': 'dracula' }
@@ -49,7 +49,6 @@ Plug 'easymotion/vim-easymotion'
 
 call plug#end()
 
-set termguicolors     " enable true colors support
 set number
 syntax on
 color dracula
@@ -61,23 +60,18 @@ nnoremap <Leader>n :NERDTreeToggle<CR>
 nnoremap <Leader>m :NERDTreeFind<CR>
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>s :w<CR>
+nnoremap <Leader>f :Files<CR>
+nnoremap <Leader>b :Buffers<CR>
+nnoremap <Leader>g :Ag<CR>
+
 inoremap jj <Esc>
+
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 map <C-+> <C-w>+
 map <C--> <C-w>-
-
-" Disable arrow keys 
-nnoremap <up>    <nop>
-nnoremap <down>  <nop>
-nnoremap <left>  <nop>
-nnoremap <right> <nop>
-inoremap <up>    <nop>
-inoremap <down>  <nop>
-inoremap <left>  <nop>
-inoremap <right> <nop>
 
 " EasyMotion
 " Configuration
