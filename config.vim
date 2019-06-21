@@ -77,7 +77,6 @@ nnoremap <Leader>n :NERDTreeToggle<CR>
 nnoremap <Leader>m :NERDTreeFind<CR>
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>s :w<CR>
-nnoremap <Leader>sq :wq<CR>
 nnoremap <Leader>f :Files<CR>
 nnoremap <Leader>b :Buffers<CR>
 nnoremap <Leader>g :Ag<CR>
