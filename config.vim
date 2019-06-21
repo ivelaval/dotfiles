@@ -60,6 +60,7 @@ set termguicolors     " enable true colors support
 set number
 syntax on
 set encoding=UTF-8
+set noswapfile
 
 map <space> <leader>
 
