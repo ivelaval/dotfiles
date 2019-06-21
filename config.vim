@@ -5,10 +5,11 @@ Plug 'tmsvg/pear-tree' " Auto add pairs to quotes, brackets, etc...
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree'
-Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}
+Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'} " :CocInstall coc-prettier coc-lists coc-marketplace coc-highlight coc-java coc-tsserver coc-tslint coc-json coc-prettier coc-css coc-html coc-angular
 Plug 'sheerun/vim-polyglot'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'scrooloose/syntastic'
+Plug 'luochen1990/rainbow'
 
 " Git
 Plug 'tpope/vim-fugitive' " Git wrapper
@@ -61,6 +62,14 @@ set number
 syntax on
 set encoding=UTF-8
 set noswapfile
+let g:rainbow_active=1
+let g:prettier#config#semi = 'true'
+let g:prettier#config#single_quote = 'true'
+set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
+set list
+
+" Coc nvim
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 map <space> <leader>
 
@@ -72,8 +81,12 @@ nnoremap <Leader>sq :wq<CR>
 nnoremap <Leader>f :Files<CR>
 nnoremap <Leader>b :Buffers<CR>
 nnoremap <Leader>g :Ag<CR>
+nnoremap <Leader>c :noh<CR>
+nnoremap <Leader>h :sp<CR>
+nnoremap <Leader>v :vsp<CR>
 
 inoremap jj <Esc>
+vnoremap jj <Esc> 
 
 map <C-h> <C-w>h
 map <C-j> <C-w>j
@@ -100,5 +113,25 @@ let g:EasyMotion_smartcase = 1
 " JK motions: Line motions
 map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
+
+" NERDTress File highlighting
+function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
+ exec 'autocmd FileType nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
+ exec 'autocmd FileType nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
+endfunction
+
+call NERDTreeHighlightFile('jade', 'green', 'none', 'green', '#151515')
+call NERDTreeHighlightFile('ini', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('md', 'blue', 'none', '#3366FF', '#151515')
+call NERDTreeHighlightFile('yml', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('config', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('conf', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('json', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('html', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('styl', 'cyan', 'none', 'cyan', '#151515')
+call NERDTreeHighlightFile('css', 'cyan', 'none', 'cyan', '#151515')
+call NERDTreeHighlightFile('coffee', 'Red', 'none', 'red', '#151515')
+call NERDTreeHighlightFile('js', 'Red', 'none', '#ffa500', '#151515')
+call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
 
 
