@@ -5,7 +5,8 @@ Plug 'tmsvg/pear-tree' " Auto add pairs to quotes, brackets, etc...
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree'
-Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'} " :CocInstall coc-prettier coc-lists coc-marketplace coc-highlight coc-java coc-tsserver coc-tslint coc-json coc-prettier coc-css coc-html coc-angular
+Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'} " :CocInstall coc-prettier coc-lists coc-marketplace coc-highlight coc-java coc-tsserver coc-tslint coc-json coc-prettier coc-css coc-html coc-angular coc-vetur
+
 Plug 'sheerun/vim-polyglot'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'scrooloose/syntastic'
