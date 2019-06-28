@@ -68,18 +68,33 @@ let g:prettier#config#semi = 'true'
 let g:prettier#config#single_quote = 'true'
 set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 set list
-set signcolumn=yes
+
+" if hidden is not set, TextEdit might fail.
+set hidden
+
+" Some servers have issues with backup files, see #649
+set nobackup
+set nowritebackup
+
+" Better display for messages
+set cmdheight=2
+
+" You will have bad experience for diagnostic messages when it's default 4000.
+set updatetime=300
+
+" don't give |ins-completion-menu| messages.
 set shortmess+=c
 
-" Coc nvim
+" always show signcolumns
+set signcolumn=yes
+
+" Coc nvim - prettier
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 map <space> <leader>
 
 nnoremap <Leader>n :NERDTreeToggle<CR>
 nnoremap <Leader>m :NERDTreeFind<CR>
-nnoremap <Leader>q :q<CR>
-nnoremap <Leader>s :w<CR>
 nnoremap <Leader>f :Files<CR>
 nnoremap <Leader>b :Buffers<CR>
 nnoremap <Leader>g :Ag<CR>
@@ -137,6 +152,8 @@ call NERDTreeHighlightFile('js', 'Red', 'none', '#ffa500', '#151515')
 call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
 
 " Coc-nvim 
+
+
 
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
