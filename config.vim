@@ -68,6 +68,8 @@ let g:prettier#config#semi = 'true'
 let g:prettier#config#single_quote = 'true'
 set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 set list
+set signcolumn=yes
+set shortmess+=c
 
 " Coc nvim
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
