@@ -47,6 +47,8 @@ Plug 'lucasprag/simpleblack'
 Plug 'jaredgorski/spacecamp'
 Plug 'fatih/molokai'
 Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'phanviet/vim-monokai-pro'
+Plug 'sonph/onehalf', {'rtp': 'vim/'}
 
 " Vim airline
 Plug 'vim-airline/vim-airline'
@@ -55,10 +57,11 @@ Plug 'easymotion/vim-easymotion'
 
 call plug#end()
 
-color dracula
-let g:airline_theme = 'one'
+set termguicolors
+colorscheme dracula
+let g:airline_theme='onehalfdark'
+
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-set termguicolors     " enable true colors support
 set number
 syntax on
 set encoding=UTF-8
@@ -66,7 +69,7 @@ set noswapfile
 let g:rainbow_active=1
 let g:prettier#config#semi = 'true'
 let g:prettier#config#single_quote = 'true'
-set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
+" set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 set list
 
 " if hidden is not set, TextEdit might fail.
