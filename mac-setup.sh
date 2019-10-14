@@ -62,6 +62,7 @@ brew cask install docker
 brew install neovim 
 brew cask install slack
 brew cask install vlc
+brew install yarn
 
 echo "Cleaning up..."
 brew cleanup
