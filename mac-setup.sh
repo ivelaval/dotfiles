@@ -63,6 +63,7 @@ brew install neovim
 brew cask install slack
 brew cask install vlc
 brew install yarn
+brew install reattach-to-user-namespace
 
 echo "Cleaning up..."
 brew cleanup
