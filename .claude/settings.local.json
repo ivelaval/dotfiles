@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(brew list:*)",
+      "Bash(ls -d ~/.*rc ~/.config/*/ ~/.*)",
+      "Bash(grep -E '^\\(asdf|bat|biome|calcurse|coreutils|ctop|deno|docker-compose|ffmpeg|fish|fnm|fzf|fx|gemini-cli|gh|git|gitleaks|go|golang-migrate|graphviz|grpcui|grpcurl|gtop|htop|maven|mise|mtr|neofetch|neovim|node|opencode|pnpm|ranger|redis|ripgrep|supabase|terminal-notifier|tesseract|tig|timer|tmux|tmuxinator|tree|vim|watchman|wget|yarn|yt-dlp\\)$')",
+      "Bash(brew leaves:*)",
+      "Bash(defaults read:*)",
+      "Bash(mas list:*)",
+      "Bash(brew tap:*)",
+      "Bash(bash /Users/vennet/dotfiles/mac-setup.sh --help)",
+      "Bash(bash /Users/vennet/dotfiles/mac-setup.sh --dry-run 2>&1)",
+      "Bash(bash /Users/vennet/dotfiles/mac-setup.sh --dry-run --section macos 2>&1)",
+      "Bash(brew install:*)",
+      "Bash(mas search:*)",
+      "Bash(bash -n /Users/vennet/dotfiles/mac-setup.sh)",
+      "Bash(bash /Users/vennet/dotfiles/mac-setup.sh --dry-run --section wizard 2>&1)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ]
+  }
+}
