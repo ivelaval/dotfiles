@@ -498,11 +498,8 @@ install_mas_apps() {
     return 0
   fi
 
-  if ! mas account &>/dev/null; then
-    warn "Not signed in to the Mac App Store. Please sign in manually first."
-    warn "Skipping App Store installs."
-    return 0
-  fi
+  # Note: 'mas account' no longer works on macOS 12+.
+  # We attempt installs directly — mas will fail per-app if not signed in.
 
   local MAS_APPS=(
     "497799835:Xcode"
@@ -519,7 +516,7 @@ install_mas_apps() {
     "470158793:Keka"
     "408981434:iMovie"
     "682658836:GarageBand"
-    "1456120961:Swift Playground"
+    "1496833156:Swift Playgrounds"
   )
 
   for entry in "${MAS_APPS[@]}"; do
