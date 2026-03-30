@@ -87,14 +87,32 @@ brew_install_formula() {
 
 brew_install_cask() {
   local pkg="$1"
+  # Check if installed via brew
   if brew list --cask 2>/dev/null | grep -q "^${pkg}$"; then
-    warn "$pkg already installed"
-  else
-    echo -e "  Installing cask: ${BOLD}$pkg${NC}"
-    run_cmd "brew install --cask '$pkg'"
-    if [ $? -eq 0 ] && ! $DRY_RUN; then
-      info "$pkg installed"
-    fi
+    warn "$pkg already installed (brew)"
+    return 0
+  fi
+  # Check if app already exists in /Applications (installed outside brew)
+  # Try to get the real app name from brew info artifacts
+  local app_name
+  app_name=$(brew info --cask "$pkg" 2>/dev/null | grep -A1 "^==> Artifacts" | tail -1 | sed 's/ (App)//;s/^ *//')
+  if [ -n "$app_name" ] && { [ -d "/Applications/${app_name}" ] || [ -d "$HOME/Applications/${app_name}" ]; }; then
+    warn "$pkg already installed (${app_name} found in /Applications)"
+    return 0
+  fi
+  # Fallback: search /Applications with a case-insensitive match on the cask name
+  local search_name
+  search_name=$(echo "$pkg" | sed 's/-/ /g')
+  if find /Applications -maxdepth 1 -iname "*${search_name}*" -print -quit 2>/dev/null | grep -q .; then
+    local found_app
+    found_app=$(find /Applications -maxdepth 1 -iname "*${search_name}*" -print -quit 2>/dev/null)
+    warn "$pkg already installed ($(basename "$found_app") found in /Applications)"
+    return 0
+  fi
+  echo -e "  Installing cask: ${BOLD}$pkg${NC}"
+  run_cmd "brew install --cask '$pkg'"
+  if [ $? -eq 0 ] && ! $DRY_RUN; then
+    info "$pkg installed"
   fi
 }
 
@@ -255,7 +273,6 @@ install_brew_taps() {
     b-ramsey/kali
     caarlos0/tap
     heroku/brew
-    homebrew/services
     ngrok/ngrok
     oven-sh/bun
     supabase/tap
@@ -383,7 +400,7 @@ install_brew_casks() {
     kiro
     android-studio
     jetbrains-toolbox  # Rider, GoLand, IntelliJ, WebStorm, DataGrip managed via Toolbox
-    fleet
+    # fleet — discontinued by JetBrains (Dec 2025)
 
     # Terminals
     iterm2
@@ -435,10 +452,8 @@ install_brew_casks() {
 
     # Utilities
     bitwarden
-    magnet
     bartender
     aldente
-    dropover
     keka
     utm
     balenaetcher
@@ -457,8 +472,8 @@ install_brew_casks() {
     font-fira-code-nerd-font
 
     # Java runtimes
-    adoptopenjdk8
-    zulu11
+    temurin@8     # successor to adoptopenjdk8
+    zulu@11
   )
 
   for pkg in "${CASKS[@]}"; do
@@ -722,8 +737,13 @@ setup_macos_defaults() {
   run_cmd 'defaults write com.apple.screencapture type -string "png"'
 
   echo "  Configuring Safari developer menu..."
-  run_cmd "defaults write com.apple.Safari IncludeDevelopMenu -bool true"
-  run_cmd "defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true"
+  # Safari defaults may fail if Safari hasn't been opened or due to SIP — non-critical
+  if defaults read com.apple.Safari &>/dev/null; then
+    run_cmd "defaults write com.apple.Safari IncludeDevelopMenu -bool true"
+    run_cmd "defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true"
+  else
+    warn "Safari preferences not accessible (open Safari at least once, or check SIP permissions)"
+  fi
 
   echo "  Configuring Trackpad..."
   run_cmd "defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true"
@@ -742,9 +762,9 @@ ask_value() {
   local default="$2"
   local value
   if [ -n "$default" ]; then
-    echo -ne "  ${prompt} [${default}]: "
+    echo -ne "  ${prompt} [${default}]: " >&2
   else
-    echo -ne "  ${prompt}: "
+    echo -ne "  ${prompt}: " >&2
   fi
   read -r value
   echo "${value:-$default}"
@@ -784,72 +804,94 @@ setup_wizard() {
   echo -e "  Press Enter to skip any step or leave a value empty.\n"
 
   # ── 1. Secrets in preset-mac.sh ──────────────────────────────────────────
-  if ask_yes_no "Configure secrets in preset-mac.sh?"; then
-    echo ""
-    echo -e "  ${BOLD}Environment Secrets${NC}"
-    echo -e "  (leave empty to keep the current placeholder)\n"
+  local preset_file="$HOME/preset-mac.sh"
+  if [ -L "$preset_file" ]; then
+    preset_file="$(readlink "$preset_file")"
+  fi
 
-    local preset_file="$HOME/preset-mac.sh"
-    if [ -L "$preset_file" ]; then
-      preset_file="$(readlink "$preset_file")"
+  if [ ! -f "$preset_file" ]; then
+    warn "preset-mac.sh not found. Run --section symlinks first. Skipping secrets."
+  else
+    # Check if secrets are already populated (non-empty values)
+    local secrets_empty=false
+    if grep -q 'RAPIDAPI_KEY=$' "$preset_file" 2>/dev/null || \
+       grep -q 'NPM_TOKEN=$' "$preset_file" 2>/dev/null || \
+       grep -q 'NUGET_GITLAB_USR=""' "$preset_file" 2>/dev/null; then
+      secrets_empty=true
     fi
 
-    if [ ! -f "$preset_file" ]; then
-      err "preset-mac.sh not found at $preset_file. Run --section symlinks first."
+    if $secrets_empty; then
+      if ask_yes_no "Configure secrets in preset-mac.sh? (some are empty)"; then
+        echo ""
+        echo -e "  ${BOLD}Environment Secrets${NC}"
+        echo -e "  (leave empty to keep the current placeholder)\n"
+
+        local rapidapi npm_token nuget_usr nuget_token localcrypt_pass localcrypt_jwt localcrypt_env
+
+        rapidapi=$(ask_value "RAPIDAPI_KEY" "")
+        npm_token=$(ask_value "NPM_TOKEN" "")
+        nuget_usr=$(ask_value "NUGET_GITLAB_USR" "")
+        nuget_token=$(ask_value "NUGET_GITLAB_TOKEN" "")
+        localcrypt_pass=$(ask_value "LOCALCRYPT_PASSPHRASE" "")
+        localcrypt_jwt=$(ask_value "LOCALCRYPT_JWT_SECRET" "")
+        localcrypt_env=$(ask_value "LOCALCRYPT_ENV" "development")
+
+        [ -n "$rapidapi" ] && sed -i '' "s|^export RAPIDAPI_KEY=.*|export RAPIDAPI_KEY=$rapidapi|" "$preset_file"
+        [ -n "$npm_token" ] && sed -i '' "s|^export NPM_TOKEN=.*|export NPM_TOKEN=$npm_token|" "$preset_file"
+        [ -n "$nuget_usr" ] && sed -i '' "s|^export NUGET_GITLAB_USR=.*|export NUGET_GITLAB_USR=\"$nuget_usr\"|" "$preset_file"
+        [ -n "$nuget_token" ] && sed -i '' "s|^export NUGET_GITLAB_TOKEN=.*|export NUGET_GITLAB_TOKEN=\"$nuget_token\"|" "$preset_file"
+        [ -n "$localcrypt_pass" ] && sed -i '' "s|^export LOCALCRYPT_PASSPHRASE=.*|export LOCALCRYPT_PASSPHRASE=\"$localcrypt_pass\"|" "$preset_file"
+        [ -n "$localcrypt_jwt" ] && sed -i '' "s|^export LOCALCRYPT_JWT_SECRET=.*|export LOCALCRYPT_JWT_SECRET=\"$localcrypt_jwt\"|" "$preset_file"
+        [ -n "$localcrypt_env" ] && sed -i '' "s|^export LOCALCRYPT_ENV=.*|export LOCALCRYPT_ENV=\"$localcrypt_env\"|" "$preset_file"
+
+        info "Secrets updated in preset-mac.sh"
+      fi
     else
-      local rapidapi npm_token nuget_usr nuget_token localcrypt_pass localcrypt_jwt localcrypt_env
-
-      rapidapi=$(ask_value "RAPIDAPI_KEY" "")
-      npm_token=$(ask_value "NPM_TOKEN" "")
-      nuget_usr=$(ask_value "NUGET_GITLAB_USR" "")
-      nuget_token=$(ask_value "NUGET_GITLAB_TOKEN" "")
-      localcrypt_pass=$(ask_value "LOCALCRYPT_PASSPHRASE" "")
-      localcrypt_jwt=$(ask_value "LOCALCRYPT_JWT_SECRET" "")
-      localcrypt_env=$(ask_value "LOCALCRYPT_ENV" "development")
-
-      [ -n "$rapidapi" ] && sed -i '' "s|^export RAPIDAPI_KEY=.*|export RAPIDAPI_KEY=$rapidapi|" "$preset_file"
-      [ -n "$npm_token" ] && sed -i '' "s|^export NPM_TOKEN=.*|export NPM_TOKEN=$npm_token|" "$preset_file"
-      [ -n "$nuget_usr" ] && sed -i '' "s|^export NUGET_GITLAB_USR=.*|export NUGET_GITLAB_USR=\"$nuget_usr\"|" "$preset_file"
-      [ -n "$nuget_token" ] && sed -i '' "s|^export NUGET_GITLAB_TOKEN=.*|export NUGET_GITLAB_TOKEN=\"$nuget_token\"|" "$preset_file"
-      [ -n "$localcrypt_pass" ] && sed -i '' "s|^export LOCALCRYPT_PASSPHRASE=.*|export LOCALCRYPT_PASSPHRASE=\"$localcrypt_pass\"|" "$preset_file"
-      [ -n "$localcrypt_jwt" ] && sed -i '' "s|^export LOCALCRYPT_JWT_SECRET=.*|export LOCALCRYPT_JWT_SECRET=\"$localcrypt_jwt\"|" "$preset_file"
-      [ -n "$localcrypt_env" ] && sed -i '' "s|^export LOCALCRYPT_ENV=.*|export LOCALCRYPT_ENV=\"$localcrypt_env\"|" "$preset_file"
-
-      info "Secrets updated in preset-mac.sh"
+      warn "Secrets in preset-mac.sh already populated"
     fi
   fi
 
   echo ""
 
   # ── 2. Configure ~/.zshrc source lines ───────────────────────────────────
-  if ask_yes_no "Add source lines to ~/.zshrc (preset-mac.sh & pomodoro.sh)?"; then
-    local zshrc="$HOME/.zshrc"
-    if [ ! -f "$zshrc" ]; then
-      touch "$zshrc"
-      info "Created ~/.zshrc"
-    fi
+  local zshrc="$HOME/.zshrc"
+  local zshrc_needs_preset=true
+  local zshrc_needs_pomodoro=true
 
-    if ! grep -q "source ~/preset-mac.sh" "$zshrc" 2>/dev/null; then
-      echo "" >> "$zshrc"
-      echo "# Dotfiles environment setup" >> "$zshrc"
-      echo "source ~/preset-mac.sh" >> "$zshrc"
-      info "Added 'source ~/preset-mac.sh' to ~/.zshrc"
-    else
-      warn "'source ~/preset-mac.sh' already in ~/.zshrc"
-    fi
+  if [ -f "$zshrc" ]; then
+    grep -q "source ~/preset-mac.sh" "$zshrc" 2>/dev/null && zshrc_needs_preset=false
+    grep -q "source ~/pomodoro.sh" "$zshrc" 2>/dev/null && zshrc_needs_pomodoro=false
+  fi
 
-    if ! grep -q "source ~/pomodoro.sh" "$zshrc" 2>/dev/null; then
-      echo "source ~/pomodoro.sh" >> "$zshrc"
-      info "Added 'source ~/pomodoro.sh' to ~/.zshrc"
-    else
-      warn "'source ~/pomodoro.sh' already in ~/.zshrc"
+  if $zshrc_needs_preset || $zshrc_needs_pomodoro; then
+    if ask_yes_no "Add missing source lines to ~/.zshrc?"; then
+      if [ ! -f "$zshrc" ]; then
+        touch "$zshrc"
+        info "Created ~/.zshrc"
+      fi
+
+      if $zshrc_needs_preset; then
+        echo "" >> "$zshrc"
+        echo "# Dotfiles environment setup" >> "$zshrc"
+        echo "source ~/preset-mac.sh" >> "$zshrc"
+        info "Added 'source ~/preset-mac.sh' to ~/.zshrc"
+      fi
+
+      if $zshrc_needs_pomodoro; then
+        echo "source ~/pomodoro.sh" >> "$zshrc"
+        info "Added 'source ~/pomodoro.sh' to ~/.zshrc"
+      fi
     fi
+  else
+    warn "~/.zshrc already has source lines for preset-mac.sh and pomodoro.sh"
   fi
 
   echo ""
 
   # ── 3. SSH Keys ──────────────────────────────────────────────────────────
-  if ask_yes_no "Generate SSH key?"; then
+  if [ -f "$HOME/.ssh/id_ed25519" ] || [ -f "$HOME/.ssh/id_rsa" ]; then
+    warn "SSH key already exists (~/.ssh/id_ed25519 or ~/.ssh/id_rsa)"
+  elif ask_yes_no "Generate SSH key?"; then
     local ssh_email ssh_type
     ssh_email=$(ask_value "Email for SSH key" "ivelaval@gmail.com")
     ssh_type=$(ask_value "Key type (ed25519/rsa)" "ed25519")
@@ -920,10 +962,14 @@ setup_wizard() {
 
   # ── 5. Docker login ─────────────────────────────────────────────────────
   if command -v docker &>/dev/null; then
-    if ask_yes_no "Login to Docker Hub?" "n"; then
-      docker login
-      if [ $? -eq 0 ]; then
-        info "Docker authenticated"
+    if [ -f "$HOME/.docker/config.json" ] && grep -q '"credsStore"' "$HOME/.docker/config.json" 2>/dev/null; then
+      warn "Docker already configured (credsStore found)"
+    else
+      if ask_yes_no "Login to Docker Hub?" "n"; then
+        docker login
+        if [ $? -eq 0 ]; then
+          info "Docker authenticated"
+        fi
       fi
     fi
   fi
@@ -945,7 +991,9 @@ setup_wizard() {
   echo ""
 
   # ── 7. npmrc private registries ──────────────────────────────────────────
-  if ask_yes_no "Configure ~/.npmrc (private registry tokens)?" "n"; then
+  if [ -f "$HOME/.npmrc" ] && grep -q "_authToken=" "$HOME/.npmrc" 2>/dev/null; then
+    warn "~/.npmrc already has auth tokens configured"
+  elif ask_yes_no "Configure ~/.npmrc (private registry tokens)?" "n"; then
     local npmrc="$HOME/.npmrc"
     if [ ! -f "$npmrc" ]; then
       touch "$npmrc"
@@ -983,9 +1031,15 @@ setup_wizard() {
 
   # ── 8. Tmux plugins install ─────────────────────────────────────────────
   if [ -x "$HOME/.tmux/plugins/tpm/scripts/install_plugins.sh" ]; then
-    if ask_yes_no "Install tmux plugins via TPM now?"; then
-      "$HOME/.tmux/plugins/tpm/scripts/install_plugins.sh" >> "$LOG_FILE" 2>&1
-      info "Tmux plugins installed"
+    local tpm_plugin_count
+    tpm_plugin_count=$(find "$HOME/.tmux/plugins" -maxdepth 1 -mindepth 1 -type d 2>/dev/null | wc -l | tr -d ' ')
+    if [ "$tpm_plugin_count" -gt 1 ]; then
+      warn "Tmux plugins already installed ($tpm_plugin_count plugins found)"
+    else
+      if ask_yes_no "Install tmux plugins via TPM now?"; then
+        "$HOME/.tmux/plugins/tpm/scripts/install_plugins.sh" >> "$LOG_FILE" 2>&1
+        info "Tmux plugins installed"
+      fi
     fi
   fi
 
@@ -993,10 +1047,15 @@ setup_wizard() {
 
   # ── 9. Neovim PackerSync ─────────────────────────────────────────────────
   if command -v nvim &>/dev/null; then
-    if ask_yes_no "Install Neovim plugins (PackerSync)?"; then
-      echo "  Running PackerSync (this may take a moment)..."
-      nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync' 2>> "$LOG_FILE"
-      info "Neovim plugins installed"
+    local packer_dir="$HOME/.local/share/nvim/site/pack/packer"
+    if [ -d "$packer_dir" ] && [ "$(find "$packer_dir" -maxdepth 2 -mindepth 2 -type d 2>/dev/null | wc -l | tr -d ' ')" -gt 1 ]; then
+      warn "Neovim plugins already installed (packer packages found)"
+    else
+      if ask_yes_no "Install Neovim plugins (PackerSync)?"; then
+        echo "  Running PackerSync (this may take a moment)..."
+        nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync' 2>> "$LOG_FILE"
+        info "Neovim plugins installed"
+      fi
     fi
   fi
 

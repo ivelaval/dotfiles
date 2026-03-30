@@ -16,7 +16,20 @@
       "Bash(bash -n /Users/vennet/dotfiles/mac-setup.sh)",
       "Bash(bash /Users/vennet/dotfiles/mac-setup.sh --dry-run --section wizard 2>&1)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(gh auth:*)",
+      "Bash(gh repo:*)",
+      "Bash(python3 -m json.tool)",
+      "Bash(python3 -c \"import json,sys; print\\(len\\(json.load\\(sys.stdin\\)\\)\\)\")",
+      "Bash(chmod +x /Users/vennet/dotfiles/scripts/github-inventory.sh)",
+      "Bash(bash /Users/vennet/dotfiles/scripts/github-inventory.sh --output /Users/vennet/dotfiles/github-projects-inventory.json)",
+      "Bash(bash /Users/vennet/dotfiles/scripts/github-inventory.sh --include-forks --output /tmp/test-inventory.json)",
+      "Bash(bash /Users/vennet/dotfiles/mac-setup.sh --section wizard)",
+      "Bash(sed -i '' '/# Dotfiles environment setup/d' ~/.zshrc)",
+      "Bash(sed -i '' '/^source ~\\\\/preset-mac.sh$/d' ~/.zshrc)",
+      "Bash(brew info:*)",
+      "Bash(bash /Users/vennet/dotfiles/mac-setup.sh --dry-run --section casks)",
+      "Bash(git:*)"
     ]
   }
 }

@@ -1,0 +1,637 @@
+{
+  "source": "github",
+  "owner": "ivelaval",
+  "total_repos": 53,
+  "total_own": 53,
+  "total_forks": 0,
+  "groups": [
+    {
+      "name": "Astro",
+      "projects": [
+        {
+          "name": "T8POC05-astro3",
+          "description": "Astro app examplo",
+          "url": "git@github.com:ivelaval/T8POC05-astro3.git",
+          "http_url": "https://github.com/ivelaval/T8POC05-astro3",
+          "default_branch": "main",
+          "is_private": false,
+          "is_fork": false,
+          "created_at": "2023-09-16T04:29:51Z",
+          "updated_at": "2023-09-16T05:16:51Z"
+        }
+      ]
+    },
+    {
+      "name": "CSS",
+      "projects": [
+        {
+          "name": "framework-sass-bem",
+          "description": "Flexible Framework BEM CSS",
+          "url": "git@github.com:ivelaval/framework-sass-bem.git",
+          "http_url": "https://github.com/ivelaval/framework-sass-bem",
+          "default_branch": "master",
+          "is_private": false,
+          "is_fork": false,
+          "created_at": "2014-10-13T21:35:51Z",
+          "updated_at": "2023-03-05T00:28:17Z"
+        },
+        {
+          "name": "framework-sass-bem-documentation",
+          "description": "Web template for zerw.css framework",
+          "url": "git@github.com:ivelaval/framework-sass-bem-documentation.git",
+          "http_url": "https://github.com/ivelaval/framework-sass-bem-documentation",
+          "default_branch": "master",
+          "is_private": false,
+          "is_fork": false,
+          "created_at": "2014-11-20T12:38:52Z",
+          "updated_at": "2017-09-10T17:43:50Z"
+        }
+      ]
+    },
+    {
+      "name": "Go",
+      "projects": [
+        {
+          "name": "cronti.auth",
+          "description": "",
+          "url": "git@github.com:ivelaval/cronti.auth.git",
+          "http_url": "https://github.com/ivelaval/cronti.auth",
+          "default_branch": "main",
+          "is_private": true,
+          "is_fork": false,
+          "created_at": "2023-07-03T17:11:28Z",
+          "updated_at": "2025-09-16T03:44:23Z"
+        },
+        {
+          "name": "syncx",
+          "description": "A modern, intelligent repository cloning tool built with smart tracking and automatic directory management",
+          "url": "git@github.com:ivelaval/syncx.git",
+          "http_url": "https://github.com/ivelaval/syncx",
+          "default_branch": "main",
+          "is_private": false,
+          "is_fork": false,
+          "created_at": "2025-11-07T03:05:59Z",
+          "updated_at": "2026-03-17T02:16:54Z"
+        },
+        {
+          "name": "T8POC07-bankapp",
+          "description": "banking app for create reusable modules",
+          "url": "git@github.com:ivelaval/T8POC07-bankapp.git",
+          "http_url": "https://github.com/ivelaval/T8POC07-bankapp",
+          "default_branch": "main",
+          "is_private": true,
+          "is_fork": false,
+          "created_at": "2023-10-15T17:03:47Z",
+          "updated_at": "2023-10-18T06:22:48Z"
+        }
+      ]
+    },
+    {
+      "name": "HTML",
+      "projects": [
+        {
+          "name": "web-components-examples",
+          "description": "Ejemplos de web components, basados en el curso de Pluralsight",
+          "url": "git@github.com:ivelaval/web-components-examples.git",
+          "http_url": "https://github.com/ivelaval/web-components-examples",
+          "default_branch": "master",
+          "is_private": false,
+          "is_fork": false,
+          "created_at": "2015-10-05T02:18:46Z",
+          "updated_at": "2015-10-05T04:02:23Z"
+        }
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "projects": [
+        {
+          "name": "cli-typescript-scaffolding",
+          "description": "",
+          "url": "git@github.com:ivelaval/cli-typescript-scaffolding.git",
+          "http_url": "https://github.com/ivelaval/cli-typescript-scaffolding",
+          "default_branch": "main",
+          "is_private": false,
+          "is_fork": false,
+          "created_at": "2024-04-14T03:05:48Z",
+          "updated_at": "2024-04-14T05:40:35Z"
+        },
+        {
+          "name": "code-examples",
+          "description": "gists, examples and algorithms of several languages such us javascript, golang, rust",
+          "url": "git@github.com:ivelaval/code-examples.git",
+          "http_url": "https://github.com/ivelaval/code-examples",
+          "default_branch": "master",
+          "is_private": true,
+          "is_fork": false,
+          "created_at": "2019-08-27T01:39:57Z",
+          "updated_at": "2024-04-29T02:17:00Z"
+        },
+        {
+          "name": "esbuild-library-scaffolding",
+          "description": "",
+          "url": "git@github.com:ivelaval/esbuild-library-scaffolding.git",
+          "http_url": "https://github.com/ivelaval/esbuild-library-scaffolding",
+          "default_branch": "main",
+          "is_private": false,
+          "is_fork": false,
+          "created_at": "2022-10-10T04:58:40Z",
+          "updated_at": "2023-03-05T00:28:16Z"
+        },
+        {
+          "name": "generator-superfrontend",
+          "description": "",
+          "url": "git@github.com:ivelaval/generator-superfrontend.git",
+          "http_url": "https://github.com/ivelaval/generator-superfrontend",
+          "default_branch": "master",
+          "is_private": false,
+          "is_fork": false,
+          "created_at": "2014-08-26T11:30:04Z",
+          "updated_at": "2014-08-29T04:01:30Z"
+        },
+        {
+          "name": "hijos-website",
+          "description": "",
+          "url": "git@github.com:ivelaval/hijos-website.git",
+          "http_url": "https://github.com/ivelaval/hijos-website",
+          "default_branch": "main",
+          "is_private": true,
+          "is_fork": false,
+          "created_at": "2021-11-28T04:42:49Z",
+          "updated_at": "2021-11-28T04:49:29Z"
+        },
+        {
+          "name": "JO",
+          "description": "Sencilla librería javascript para manipulación del DOM",
+          "url": "git@github.com:ivelaval/JO.git",
+          "http_url": "https://github.com/ivelaval/JO",
+          "default_branch": "master",
+          "is_private": false,
+          "is_fork": false,
+          "created_at": "2014-09-17T22:04:02Z",
+          "updated_at": "2014-09-17T22:06:57Z"
+        },
+        {
+          "name": "managing-translations-files",
+          "description": "CLI tool for managing translations files needed by Angular, React and Vue apps",
+          "url": "git@github.com:ivelaval/managing-translations-files.git",
+          "http_url": "https://github.com/ivelaval/managing-translations-files",
+          "default_branch": "master",
+          "is_private": false,
+          "is_fork": false,
+          "created_at": "2019-08-14T17:12:24Z",
+          "updated_at": "2023-03-05T00:28:16Z"
+        },
+        {
+          "name": "pnpm-monorepo-scaffolding",
+          "description": "",
+          "url": "git@github.com:ivelaval/pnpm-monorepo-scaffolding.git",
+          "http_url": "https://github.com/ivelaval/pnpm-monorepo-scaffolding",
+          "default_branch": "main",
+          "is_private": false,
+          "is_fork": false,
+          "created_at": "2022-10-26T05:03:16Z",
+          "updated_at": "2023-03-05T00:28:16Z"
+        },
+        {
+          "name": "react-typescript-library",
+          "description": "React typescript library example",
+          "url": "git@github.com:ivelaval/react-typescript-library.git",
+          "http_url": "https://github.com/ivelaval/react-typescript-library",
+          "default_branch": "master",
+          "is_private": false,
+          "is_fork": false,
+          "created_at": "2020-04-05T19:42:07Z",
+          "updated_at": "2023-03-05T00:28:16Z"
+        },
+        {
+          "name": "react-typescript-webpack",
+          "description": "",
+          "url": "git@github.com:ivelaval/react-typescript-webpack.git",
+          "http_url": "https://github.com/ivelaval/react-typescript-webpack",
+          "default_branch": "master",
+          "is_private": false,
+          "is_fork": false,
+          "created_at": "2019-07-23T13:42:45Z",
+          "updated_at": "2023-03-05T00:28:17Z"
+        },
+        {
+          "name": "zerw-react-cli",
+          "description": "React scaffolding tool, made with love.",
+          "url": "git@github.com:ivelaval/zerw-react-cli.git",
+          "http_url": "https://github.com/ivelaval/zerw-react-cli",
+          "default_branch": "master",
+          "is_private": false,
+          "is_fork": false,
+          "created_at": "2017-08-30T15:05:09Z",
+          "updated_at": "2020-10-08T04:06:31Z"
+        }
+      ]
+    },
+    {
+      "name": "Other",
+      "projects": [
+        {
+          "name": "as-code",
+          "description": "App to save code snippets saved on local files or any data base with Golang",
+          "url": "git@github.com:ivelaval/as-code.git",
+          "http_url": "https://github.com/ivelaval/as-code",
+          "default_branch": "main",
+          "is_private": true,
+          "is_fork": false,
+          "created_at": "2022-08-23T23:26:02Z",
+          "updated_at": "2022-08-23T23:26:02Z"
+        },
+        {
+          "name": "contacts-directory",
+          "description": "Prospects for possible business",
+          "url": "git@github.com:ivelaval/contacts-directory.git",
+          "http_url": "https://github.com/ivelaval/contacts-directory",
+          "default_branch": "master",
+          "is_private": true,
+          "is_fork": false,
+          "created_at": "2019-09-04T22:43:55Z",
+          "updated_at": "2019-09-04T22:43:55Z"
+        },
+        {
+          "name": "engineering-notes",
+          "description": "",
+          "url": "git@github.com:ivelaval/engineering-notes.git",
+          "http_url": "https://github.com/ivelaval/engineering-notes",
+          "default_branch": "master",
+          "is_private": false,
+          "is_fork": false,
+          "created_at": "2019-08-02T21:13:06Z",
+          "updated_at": "2023-03-05T00:28:16Z"
+        },
+        {
+          "name": "esbuild-node-api",
+          "description": "",
+          "url": "git@github.com:ivelaval/esbuild-node-api.git",
+          "http_url": "https://github.com/ivelaval/esbuild-node-api",
+          "default_branch": "main",
+          "is_private": false,
+          "is_fork": false,
+          "created_at": "2022-10-01T01:52:59Z",
+          "updated_at": "2023-03-05T00:28:16Z"
+        },
+        {
+          "name": "formtran",
+          "description": "Managing forms in an easy and high-performance way",
+          "url": "git@github.com:ivelaval/formtran.git",
+          "http_url": "https://github.com/ivelaval/formtran",
+          "default_branch": "main",
+          "is_private": false,
+          "is_fork": false,
+          "created_at": "2024-10-15T23:33:09Z",
+          "updated_at": "2024-10-18T01:53:14Z"
+        },
+        {
+          "name": "hackerrank",
+          "description": "HackerRank exercises",
+          "url": "git@github.com:ivelaval/hackerrank.git",
+          "http_url": "https://github.com/ivelaval/hackerrank",
+          "default_branch": "master",
+          "is_private": false,
+          "is_fork": false,
+          "created_at": "2019-08-15T02:11:00Z",
+          "updated_at": "2023-03-05T00:28:17Z"
+        },
+        {
+          "name": "instaclone-course",
+          "description": "https://www.udemy.com/course/crea-tu-red-social-con-react-graphql-apollo-mongodb-y-aws/",
+          "url": "git@github.com:ivelaval/instaclone-course.git",
+          "http_url": "https://github.com/ivelaval/instaclone-course",
+          "default_branch": "master",
+          "is_private": false,
+          "is_fork": false,
+          "created_at": "2020-08-07T04:09:35Z",
+          "updated_at": "2023-03-05T00:28:17Z"
+        },
+        {
+          "name": "inventory-go-app",
+          "description": "Inventory app from this youtube course https://www.youtube.com/watch?v=n8uOn6pbRog&list=PL8_XhILZ7wd1pdKNTRychtqHrkebF8nVE",
+          "url": "git@github.com:ivelaval/inventory-go-app.git",
+          "http_url": "https://github.com/ivelaval/inventory-go-app",
+          "default_branch": "main",
+          "is_private": false,
+          "is_fork": false,
+          "created_at": "2023-07-03T17:13:33Z",
+          "updated_at": "2023-07-03T17:13:33Z"
+        },
+        {
+          "name": "isomorphic-react-typescript",
+          "description": "",
+          "url": "git@github.com:ivelaval/isomorphic-react-typescript.git",
+          "http_url": "https://github.com/ivelaval/isomorphic-react-typescript",
+          "default_branch": "master",
+          "is_private": false,
+          "is_fork": false,
+          "created_at": "2019-07-19T02:19:16Z",
+          "updated_at": "2019-07-25T04:09:50Z"
+        },
+        {
+          "name": "ivelaval",
+          "description": "Config files for my GitHub profile.",
+          "url": "git@github.com:ivelaval/ivelaval.git",
+          "http_url": "https://github.com/ivelaval/ivelaval",
+          "default_branch": "main",
+          "is_private": false,
+          "is_fork": false,
+          "created_at": "2022-10-07T02:48:22Z",
+          "updated_at": "2023-03-05T00:28:16Z"
+        },
+        {
+          "name": "node-topics",
+          "description": "Advanced topics in node",
+          "url": "git@github.com:ivelaval/node-topics.git",
+          "http_url": "https://github.com/ivelaval/node-topics",
+          "default_branch": "master",
+          "is_private": false,
+          "is_fork": false,
+          "created_at": "2019-08-23T14:19:21Z",
+          "updated_at": "2023-03-05T00:28:17Z"
+        },
+        {
+          "name": "react-hook-pubsub",
+          "description": "",
+          "url": "git@github.com:ivelaval/react-hook-pubsub.git",
+          "http_url": "https://github.com/ivelaval/react-hook-pubsub",
+          "default_branch": "master",
+          "is_private": true,
+          "is_fork": false,
+          "created_at": "2020-07-26T05:41:51Z",
+          "updated_at": "2020-07-26T05:41:55Z"
+        },
+        {
+          "name": "scaffolding-i18n-static-site-nextjs",
+          "description": "",
+          "url": "git@github.com:ivelaval/scaffolding-i18n-static-site-nextjs.git",
+          "http_url": "https://github.com/ivelaval/scaffolding-i18n-static-site-nextjs",
+          "default_branch": "main",
+          "is_private": false,
+          "is_fork": false,
+          "created_at": "2021-09-11T02:01:49Z",
+          "updated_at": "2023-03-05T00:28:17Z"
+        },
+        {
+          "name": "sequeljs",
+          "description": "Node.js framework to building restful api with express and others libraries",
+          "url": "git@github.com:ivelaval/sequeljs.git",
+          "http_url": "https://github.com/ivelaval/sequeljs",
+          "default_branch": "master",
+          "is_private": false,
+          "is_fork": false,
+          "created_at": "2020-01-29T01:26:57Z",
+          "updated_at": "2023-03-05T00:28:17Z"
+        },
+        {
+          "name": "simpleflows",
+          "description": "Tool made easy the creation of flows for marketing",
+          "url": "git@github.com:ivelaval/simpleflows.git",
+          "http_url": "https://github.com/ivelaval/simpleflows",
+          "default_branch": "main",
+          "is_private": false,
+          "is_fork": false,
+          "created_at": "2025-02-16T01:26:15Z",
+          "updated_at": "2025-02-16T01:26:19Z"
+        },
+        {
+          "name": "todo-app-react-hooks",
+          "description": "",
+          "url": "git@github.com:ivelaval/todo-app-react-hooks.git",
+          "http_url": "https://github.com/ivelaval/todo-app-react-hooks",
+          "default_branch": "master",
+          "is_private": false,
+          "is_fork": false,
+          "created_at": "2019-08-01T21:46:51Z",
+          "updated_at": "2019-08-01T21:46:54Z"
+        },
+        {
+          "name": "vennet-bank",
+          "description": "Personal bank for the finance health",
+          "url": "git@github.com:ivelaval/vennet-bank.git",
+          "http_url": "https://github.com/ivelaval/vennet-bank",
+          "default_branch": "master",
+          "is_private": true,
+          "is_fork": false,
+          "created_at": "2020-10-01T04:17:42Z",
+          "updated_at": "2020-10-01T04:17:47Z"
+        },
+        {
+          "name": "vennet-cli",
+          "description": "",
+          "url": "git@github.com:ivelaval/vennet-cli.git",
+          "http_url": "https://github.com/ivelaval/vennet-cli",
+          "default_branch": "main",
+          "is_private": false,
+          "is_fork": false,
+          "created_at": "2022-11-14T21:59:12Z",
+          "updated_at": "2023-03-05T00:28:16Z"
+        },
+        {
+          "name": "virtual-dom",
+          "description": "",
+          "url": "git@github.com:ivelaval/virtual-dom.git",
+          "http_url": "https://github.com/ivelaval/virtual-dom",
+          "default_branch": "main",
+          "is_private": false,
+          "is_fork": false,
+          "created_at": "2023-02-10T21:45:05Z",
+          "updated_at": "2023-03-05T00:28:16Z"
+        }
+      ]
+    },
+    {
+      "name": "PHP",
+      "projects": [
+        {
+          "name": "ZsonDB",
+          "description": "",
+          "url": "git@github.com:ivelaval/ZsonDB.git",
+          "http_url": "https://github.com/ivelaval/ZsonDB",
+          "default_branch": "master",
+          "is_private": false,
+          "is_fork": false,
+          "created_at": "2014-08-10T00:42:19Z",
+          "updated_at": "2014-08-10T00:55:24Z"
+        }
+      ]
+    },
+    {
+      "name": "Shell",
+      "projects": [
+        {
+          "name": "dotfiles",
+          "description": "Vim configurations and more",
+          "url": "git@github.com:ivelaval/dotfiles.git",
+          "http_url": "https://github.com/ivelaval/dotfiles",
+          "default_branch": "master",
+          "is_private": false,
+          "is_fork": false,
+          "created_at": "2019-06-13T23:13:30Z",
+          "updated_at": "2026-03-29T20:52:28Z"
+        }
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "projects": [
+        {
+          "name": "Advance.Mobile.UserApp",
+          "description": "",
+          "url": "git@github.com:ivelaval/Advance.Mobile.UserApp.git",
+          "http_url": "https://github.com/ivelaval/Advance.Mobile.UserApp",
+          "default_branch": "master",
+          "is_private": true,
+          "is_fork": false,
+          "created_at": "2020-12-09T16:46:41Z",
+          "updated_at": "2021-05-01T01:06:35Z"
+        },
+        {
+          "name": "api-node-typescript-scaffolding",
+          "description": "",
+          "url": "git@github.com:ivelaval/api-node-typescript-scaffolding.git",
+          "http_url": "https://github.com/ivelaval/api-node-typescript-scaffolding",
+          "default_branch": "main",
+          "is_private": false,
+          "is_fork": false,
+          "created_at": "2024-04-03T01:31:05Z",
+          "updated_at": "2024-08-25T23:24:12Z"
+        },
+        {
+          "name": "brik",
+          "description": "http tools for speed up the requests implementation in node and browser",
+          "url": "git@github.com:ivelaval/brik.git",
+          "http_url": "https://github.com/ivelaval/brik",
+          "default_branch": "main",
+          "is_private": true,
+          "is_fork": false,
+          "created_at": "2024-04-23T03:40:21Z",
+          "updated_at": "2024-10-30T03:37:15Z"
+        },
+        {
+          "name": "chatbot-cli",
+          "description": "Chatbot with chatGPT and nodejs",
+          "url": "git@github.com:ivelaval/chatbot-cli.git",
+          "http_url": "https://github.com/ivelaval/chatbot-cli",
+          "default_branch": "main",
+          "is_private": true,
+          "is_fork": false,
+          "created_at": "2023-03-24T00:32:29Z",
+          "updated_at": "2023-03-24T02:38:47Z"
+        },
+        {
+          "name": "cms-contenful-blog",
+          "description": "Next.js app with typescript and Contentful",
+          "url": "git@github.com:ivelaval/cms-contenful-blog.git",
+          "http_url": "https://github.com/ivelaval/cms-contenful-blog",
+          "default_branch": "main",
+          "is_private": false,
+          "is_fork": false,
+          "created_at": "2022-08-11T04:47:48Z",
+          "updated_at": "2023-03-05T00:28:16Z"
+        },
+        {
+          "name": "esbuild-typescript-demo",
+          "description": "",
+          "url": "git@github.com:ivelaval/esbuild-typescript-demo.git",
+          "http_url": "https://github.com/ivelaval/esbuild-typescript-demo",
+          "default_branch": "main",
+          "is_private": false,
+          "is_fork": false,
+          "created_at": "2022-09-23T00:50:57Z",
+          "updated_at": "2023-03-05T00:28:16Z"
+        },
+        {
+          "name": "ladder-ui",
+          "description": "Flexible and robust UI component library for react",
+          "url": "git@github.com:ivelaval/ladder-ui.git",
+          "http_url": "https://github.com/ivelaval/ladder-ui",
+          "default_branch": "main",
+          "is_private": false,
+          "is_fork": false,
+          "created_at": "2022-08-11T05:05:08Z",
+          "updated_at": "2026-03-16T04:31:03Z"
+        },
+        {
+          "name": "plata",
+          "description": "Finance app",
+          "url": "git@github.com:ivelaval/plata.git",
+          "http_url": "https://github.com/ivelaval/plata",
+          "default_branch": "main",
+          "is_private": false,
+          "is_fork": false,
+          "created_at": "2025-08-09T02:14:47Z",
+          "updated_at": "2025-08-09T05:15:53Z"
+        },
+        {
+          "name": "SOLID-clean-architecture",
+          "description": "",
+          "url": "git@github.com:ivelaval/SOLID-clean-architecture.git",
+          "http_url": "https://github.com/ivelaval/SOLID-clean-architecture",
+          "default_branch": "main",
+          "is_private": false,
+          "is_fork": false,
+          "created_at": "2022-10-03T20:57:47Z",
+          "updated_at": "2023-03-05T00:28:16Z"
+        },
+        {
+          "name": "T8POC02-zustand-clientside",
+          "description": "",
+          "url": "git@github.com:ivelaval/T8POC02-zustand-clientside.git",
+          "http_url": "https://github.com/ivelaval/T8POC02-zustand-clientside",
+          "default_branch": "main",
+          "is_private": false,
+          "is_fork": false,
+          "created_at": "2023-07-23T04:00:22Z",
+          "updated_at": "2023-07-23T04:09:48Z"
+        },
+        {
+          "name": "T8POC03-nextjs13",
+          "description": "",
+          "url": "git@github.com:ivelaval/T8POC03-nextjs13.git",
+          "http_url": "https://github.com/ivelaval/T8POC03-nextjs13",
+          "default_branch": "main",
+          "is_private": false,
+          "is_fork": false,
+          "created_at": "2023-07-23T04:18:50Z",
+          "updated_at": "2023-07-23T05:04:53Z"
+        },
+        {
+          "name": "turborepo-monorepo-scaffolding",
+          "description": "Monorepo scaffolding with turborepo",
+          "url": "git@github.com:ivelaval/turborepo-monorepo-scaffolding.git",
+          "http_url": "https://github.com/ivelaval/turborepo-monorepo-scaffolding",
+          "default_branch": "main",
+          "is_private": false,
+          "is_fork": false,
+          "created_at": "2024-03-30T02:56:56Z",
+          "updated_at": "2024-10-16T00:14:58Z"
+        },
+        {
+          "name": "vennet-dev-blog",
+          "description": "",
+          "url": "git@github.com:ivelaval/vennet-dev-blog.git",
+          "http_url": "https://github.com/ivelaval/vennet-dev-blog",
+          "default_branch": "main",
+          "is_private": true,
+          "is_fork": false,
+          "created_at": "2025-09-01T22:42:11Z",
+          "updated_at": "2025-09-01T23:18:02Z"
+        },
+        {
+          "name": "vennet-dev-website",
+          "description": "",
+          "url": "git@github.com:ivelaval/vennet-dev-website.git",
+          "http_url": "https://github.com/ivelaval/vennet-dev-website",
+          "default_branch": "main",
+          "is_private": true,
+          "is_fork": false,
+          "created_at": "2024-07-29T18:58:12Z",
+          "updated_at": "2025-01-12T17:07:19Z"
+        }
+      ]
+    }
+  ]
+}
