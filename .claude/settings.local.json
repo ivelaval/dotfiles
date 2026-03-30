@@ -29,7 +29,8 @@
       "Bash(sed -i '' '/^source ~\\\\/preset-mac.sh$/d' ~/.zshrc)",
       "Bash(brew info:*)",
       "Bash(bash /Users/vennet/dotfiles/mac-setup.sh --dry-run --section casks)",
-      "Bash(git:*)"
+      "Bash(git:*)",
+      "Bash(bash mac-setup.sh --dry-run --section symlinks 2>&1)"
     ]
   }
 }
