@@ -1,0 +1,1535 @@
+{
+  "groups": [
+    {
+      "name": "Analytics",
+      "projects": [
+        {
+          "name": "fenske",
+          "url": "git@gitlab.com:uproarcar/olive-com/analytics/fenske.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/analytics/fenske.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "pyspark-test",
+          "url": "git@gitlab.com:uproarcar/olive-com/analytics/pyspark-test.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/analytics/pyspark-test.git",
+          "default_branch": "main"
+        }
+      ]
+    },
+    {
+      "name": "Artificial Intelligence",
+      "projects": [
+        {
+          "name": "bedrock-development-agent",
+          "url": "git@gitlab.com:uproarcar/olive-com/artificial-intelligence/bedrock-development-agent.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/artificial-intelligence/bedrock-development-agent.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "mcp-DataScience",
+          "url": "git@gitlab.com:uproarcar/olive-com/artificial-intelligence/mcp-datascience.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/artificial-intelligence/mcp-datascience.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "mcp-development",
+          "url": "git@gitlab.com:uproarcar/olive-com/artificial-intelligence/mcp-development.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/artificial-intelligence/mcp-development.git",
+          "default_branch": "main"
+        }
+      ]
+    },
+    {
+      "name": "BI",
+      "projects": [
+        {
+          "name": "PowerBI",
+          "url": "git@gitlab.com:uproarcar/olive-com/bi/powerbi.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/bi/powerbi.git",
+          "default_branch": "main"
+        }
+      ]
+    },
+    {
+      "name": "Boilerplates",
+      "groups": [
+        {
+          "name": "Microfrontends",
+          "projects": [
+            {
+              "name": "Olive Fragment Microfrontend Vite Boilerplate",
+              "url": "git@gitlab.com:uproarcar/olive-com/boilerplates/microfrontends/olive-fragment-microfrontend-vite-boilerplate.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/boilerplates/microfrontends/olive-fragment-microfrontend-vite-boilerplate.git",
+              "default_branch": "master"
+            },
+            {
+              "name": "olive-fragment-microfrontend-boilerplate",
+              "url": "git@gitlab.com:uproarcar/olive-com/boilerplates/microfrontends/olive-fragment-microfrontend-boilerplate.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/boilerplates/microfrontends/olive-fragment-microfrontend-boilerplate.git",
+              "default_branch": "master"
+            },
+            {
+              "name": "olive-microfragment-vite-boilerplate",
+              "url": "git@gitlab.com:uproarcar/olive-com/boilerplates/microfrontends/olive-microfragment-vite-boilerplate.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/boilerplates/microfrontends/olive-microfragment-vite-boilerplate.git",
+              "default_branch": "master"
+            },
+            {
+              "name": "olive-page-microfrontend-boilerplate",
+              "url": "git@gitlab.com:uproarcar/olive-com/boilerplates/microfrontends/olive-page-microfrontend-boilerplate.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/boilerplates/microfrontends/olive-page-microfrontend-boilerplate.git",
+              "default_branch": "main"
+            }
+          ]
+        },
+        {
+          "name": "Microservices"
+        }
+      ]
+    },
+    {
+      "name": "Data engineer",
+      "projects": [
+        {
+          "name": "accountnet",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/accountnet.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/accountnet.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "accountnet_metrics",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/accountnet_metrics.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/accountnet_metrics.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "aws_to_hubspot",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/aws_to_hubspot.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/aws_to_hubspot.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "bordereau",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/bordereau.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/bordereau.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "deleted_biweekly",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/biweekly.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/biweekly.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "deleted_ford_data_ingestion",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/ford_data_ingestion.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/ford_data_ingestion.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "deleted_ford_dealer_dna_table",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/ford_dealer_dna_table.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/ford_dealer_dna_table.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "deleted_ford_dealer_file",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/ford_dealer.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/ford_dealer.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "deleted_ford_dealer_salesforce_data_ingestion",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/ford_dealer_salesforce_data_ingestion.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/ford_dealer_salesforce_data_ingestion.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "deleted_ford_exp_history_v2",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/ford_exp_history_v2.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/ford_exp_history_v2.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "deleted_ford_pid_generation",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/pid-creation.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/pid-creation.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "deleted_mpos_cancel_file",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/mpos_cancel.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/mpos_cancel.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "deleted_mpos_daily_sales_file",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/mpos_daily_sales.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/mpos_daily_sales.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "deleted_mpos_data_project",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/mpos-data-project.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/mpos-data-project.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "deleted_oem_dashboard",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/oem_dashboard.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/oem_dashboard.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "deleted_oem_data_project",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/oem-data-project.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/oem-data-project.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "deleted_payments_reports",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/payments_reports.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/payments_reports.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "deleted_sf_ford_tables_resumen",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/sf_ford_tables_resumen.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/sf_ford_tables_resumen.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "deleted_shop_database_data_ingestion",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/shop_database.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/shop_database.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "deleted_stellantis_email_optout_file_beta",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/mpos-email.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/mpos-email.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "dsf_request",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/dfs_request.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/dfs_request.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "exodus_daily_routines",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/exodus_daily_routines.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/exodus_daily_routines.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "exodus_data_ingestion",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/exodus_data_ingestion.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/exodus_data_ingestion.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "exodus_ingestion_resumen",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/exodus_ingestion_resumen.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/exodus_ingestion_resumen.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "fenske_cdk",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/fenske_cdk.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/fenske_cdk.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "ford_add_on",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/ford_add_on.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/ford_add_on.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "ford_clock",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/ford_clock.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/ford_clock.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "ford_daily_routines",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/ford_daily_routines.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/ford_daily_routines.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "ford_dna_table",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/ford_dna_table.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/ford_dna_table.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "ford_files_oem_csp_exp",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/ford_files_oem_csp_exp.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/ford_files_oem_csp_exp.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "ford_files_update_contacts",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/ford_files_update_contacts.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/ford_files_update_contacts.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "ford_files_update_vehicles",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/ford_files_update_vehicles.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/ford_files_update_vehicles.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "ford_lmrv",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/ford_lmrv.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/ford_lmrv.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "ford_mind_month_files",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/oem-mind-month-ford-files.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/oem-mind-month-ford-files.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "ford_one_adr",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/ford_one_adr.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/ford_one_adr.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "ford_reinstate",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/ford_reinstate.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/ford_reinstate.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "general_infrastructure_cdk",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/general_infrastructure_cdk.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/general_infrastructure_cdk.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "general_purpose",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/general_purpose.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/general_purpose.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "glue_shop_database",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/glue_shop_database.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/glue_shop_database.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "google_analytics_data",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/google_analytics_data.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/google_analytics_data.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "hubspot_crm_events",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/hubspot_crm_events.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/hubspot_crm_events.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "hubspot_data_ingestion",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/hubspot_ingestion_original.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/hubspot_ingestion_original.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "hubspot_to_aws",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/hubspot_to_aws.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/hubspot_to_aws.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "mixpanel",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/mixpanel.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/mixpanel.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "oasis_registration",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/oasis_registration.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/oasis_registration.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "olive_salesforce_data_ingestion",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/olive_data_ingestion.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/olive_data_ingestion.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "pid_generate_service",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/pid_generate_service.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/pid_generate_service.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "pull_opportunity_cdk",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/pull_opportunity_cdk.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/pull_opportunity_cdk.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "sales_agent_search",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/sales_agent_search.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/sales_agent_search.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "salesforce_master_tables_cdk",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/salesforce_master_tables_cdk.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/salesforce_master_tables_cdk.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "segment_logs",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/segment_logs.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/segment_logs.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "sf_fca_tables_resumen",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/sf_fca_tables_resumen.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/sf_fca_tables_resumen.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "sf_olive_tables_resumen",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/sf_olive_tables_resumen.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/sf_olive_tables_resumen.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "sf_plan_master_table",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/sf_plan_master_table.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/sf_plan_master_table.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "sf_policy_master_table",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/sf_policy_master_table.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/sf_policy_master_table.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "stellantis_clock",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/stellantis_clock.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/stellantis_clock.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "stellantis_daily_routines",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/fca_daily_routines.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/fca_daily_routines.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "stellantis_dna_table",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/stellantis_dna_table.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/stellantis_dna_table.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "stellantis_download_files",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/stellantis_download_files.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/stellantis_download_files.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "stellantis_email_optout_file",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/stellantis_email_optout_file.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/stellantis_email_optout_file.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "stellantis_files_exp",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/stellantis_files_cdk.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/stellantis_files_cdk.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "stellantis_files_mvp_oem",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/stellantis_files_mvp_oem.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/stellantis_files_mvp_oem.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "stellantis_files_update_contacts",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/stellantis_files_update_contacts.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/stellantis_files_update_contacts.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "stellantis_files_vri",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/stellantis_files_vri.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/stellantis_files_vri.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "stellantis_salesforce_data_ingestion",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/fca_data_ingestion.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/fca_data_ingestion.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "summaries_bi",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/summaries_bi.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/summaries_bi.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "summaries_dna",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/summaries_dna.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/summaries_dna.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "vonage_audio",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/vonage_audio.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/vonage_audio.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "zerobounce_response",
+          "url": "git@gitlab.com:uproarcar/olive-com/data-engineer/zerobounce_response.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/data-engineer/zerobounce_response.git",
+          "default_branch": "main"
+        }
+      ]
+    },
+    {
+      "name": "Proof of Concept",
+      "groups": [
+        {
+          "name": "Microfrontends",
+          "projects": [
+            {
+              "name": "podium-react-poc",
+              "url": "git@gitlab.com:uproarcar/olive-com/proof-of-concept/microfrontends/podium-react-poc.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/proof-of-concept/microfrontends/podium-react-poc.git",
+              "default_branch": "main"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Salesforce",
+      "projects": [
+        {
+          "name": "Data Dictionary Salesforce",
+          "url": "git@gitlab.com:uproarcar/olive-com/salesforce/data-dictionary-salesforce.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/salesforce/data-dictionary-salesforce.git",
+          "default_branch": "master"
+        },
+        {
+          "name": "FCA",
+          "url": "git@gitlab.com:uproarcar/olive-com/salesforce/fca-newMock.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/salesforce/fca-newMock.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "Ford",
+          "url": "git@gitlab.com:uproarcar/olive-com/salesforce/ford.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/salesforce/ford.git",
+          "default_branch": "main",
+          "description": "Ford"
+        },
+        {
+          "name": "Ford Dealer Development",
+          "url": "git@gitlab.com:uproarcar/olive-com/salesforce/ford-dealer-development.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/salesforce/ford-dealer-development.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "Ford Old Republic",
+          "url": "git@gitlab.com:uproarcar/olive-com/salesforce/ford-old-republic.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/salesforce/ford-old-republic.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "FordDealers",
+          "url": "git@gitlab.com:uproarcar/olive-com/salesforce/forddealers.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/salesforce/forddealers.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "Olive",
+          "url": "git@gitlab.com:uproarcar/olive-com/salesforce/olive.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/salesforce/olive.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "Olive Canada",
+          "url": "git@gitlab.com:uproarcar/olive-com/salesforce/olive-canada.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/salesforce/olive-canada.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "Olive-metadata",
+          "url": "git@gitlab.com:uproarcar/olive-com/salesforce/olive-metadata.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/salesforce/olive-metadata.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "Python data analysis",
+          "url": "git@gitlab.com:uproarcar/olive-com/salesforce/python-data-analysis.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/salesforce/python-data-analysis.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "SF All Orgs Code Sync",
+          "url": "git@gitlab.com:uproarcar/olive-com/salesforce/sf-all-orgs-code-sync.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/salesforce/sf-all-orgs-code-sync.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "SF data analysis ",
+          "url": "git@gitlab.com:uproarcar/olive-com/salesforce/sf-data-analysis.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/salesforce/sf-data-analysis.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "Salesforce-Packages",
+          "url": "git@gitlab.com:uproarcar/olive-com/salesforce/salesforce-packages.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/salesforce/salesforce-packages.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "SalesforceDocuments",
+          "url": "git@gitlab.com:uproarcar/olive-com/salesforce/salesforcedocuments.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/salesforce/salesforcedocuments.git",
+          "default_branch": "master"
+        },
+        {
+          "name": "Upload Website",
+          "url": "git@gitlab.com:uproarcar/olive-com/salesforce/upload-website.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/salesforce/upload-website.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "Upload Website API",
+          "url": "git@gitlab.com:uproarcar/olive-com/salesforce/upload-website-api.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/salesforce/upload-website-api.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "exodus-migration",
+          "url": "git@gitlab.com:uproarcar/olive-com/salesforce/exodus-migration.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/salesforce/exodus-migration.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "ford_oem_deploy_poc",
+          "url": "git@gitlab.com:uproarcar/olive-com/salesforce/ford_oem_deploy_poc.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/salesforce/ford_oem_deploy_poc.git",
+          "default_branch": "dev"
+        },
+        {
+          "name": "new_batch_quoting",
+          "url": "git@gitlab.com:uproarcar/olive-com/salesforce/new_batch_quoting.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/salesforce/new_batch_quoting.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "salesforce-aws-sftppaylink",
+          "url": "git@gitlab.com:uproarcar/olive-com/salesforce/salesforce-aws-sftppaylink.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/salesforce/salesforce-aws-sftppaylink.git",
+          "default_branch": "master"
+        },
+        {
+          "name": "temporal app",
+          "url": "git@gitlab.com:uproarcar/olive-com/salesforce/temporal-app.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/salesforce/temporal-app.git",
+          "default_branch": "main"
+        }
+      ]
+    },
+    {
+      "name": "Team Gondor",
+      "groups": [
+        {
+          "name": "Libraries",
+          "projects": [
+            {
+              "name": "olive.libraries.chase",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-gondor/libraries/olive.libraries.chase.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-gondor/libraries/olive.libraries.chase.git",
+              "default_branch": "main"
+            },
+            {
+              "name": "olive.libraries.fiserv",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-gondor/libraries/olive.libraries.fiserv.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-gondor/libraries/olive.libraries.fiserv.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive.libraries.paymentgateway",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-gondor/libraries/olive.libraries.paymentgateway.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-gondor/libraries/olive.libraries.paymentgateway.git",
+              "default_branch": "main"
+            },
+            {
+              "name": "olive.libraries.paymentgateway.documentation",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-gondor/libraries/olive.libraries.paymentgateway.documentation.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-gondor/libraries/olive.libraries.paymentgateway.documentation.git",
+              "default_branch": "main"
+            }
+          ]
+        },
+        {
+          "name": "Microfrontends",
+          "projects": [
+            {
+              "name": "olive-mff-ecommerce-assets",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-gondor/microfrontends/olive-mff-ecommerce-assets.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-gondor/microfrontends/olive-mff-ecommerce-assets.git",
+              "default_branch": "development",
+              "description": "Initialization of assets"
+            },
+            {
+              "name": "olive-mff-ecommerce-customer-reviews",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-gondor/microfrontends/olive-mff-ecommerce-customer-reviews.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-gondor/microfrontends/olive-mff-ecommerce-customer-reviews.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive-mff-ecommerce-customer-reviews-test",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-gondor/microfrontends/olive-mff-ecommerce-customer-reviews-test.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-gondor/microfrontends/olive-mff-ecommerce-customer-reviews-test.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive-mff-ecommerce-error-pages",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-gondor/microfrontends/olive-mff-ecommerce-error-pages.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-gondor/microfrontends/olive-mff-ecommerce-error-pages.git",
+              "default_branch": "development",
+              "description": "Generic error pages for the flow"
+            },
+            {
+              "name": "olive-mff-ecommerce-generic-content",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-gondor/microfrontends/olive-mff-ecommerce-generic-content.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-gondor/microfrontends/olive-mff-ecommerce-generic-content.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive-mff-ecommerce-header",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-gondor/microfrontends/olive-mff-ecommerce-header.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-gondor/microfrontends/olive-mff-ecommerce-header.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive-mfp-ecommerce-error-pages",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-gondor/microfrontends/olive-mfp-ecommerce-error-pages.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-gondor/microfrontends/olive-mfp-ecommerce-error-pages.git",
+              "default_branch": "development"
+            }
+          ]
+        },
+        {
+          "name": "Microservices",
+          "projects": [
+            {
+              "name": "olive-content-api",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-gondor/microservices/olive-content-api.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-gondor/microservices/olive-content-api.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive.business.checkout",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-gondor/microservices/olive.business.checkout.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-gondor/microservices/olive.business.checkout.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive.business.contract",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-gondor/microservices/olive.business.contract.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-gondor/microservices/olive.business.contract.git",
+              "default_branch": "development"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Team Ludus",
+      "groups": [
+        {
+          "name": "Libraries",
+          "projects": [
+            {
+              "name": "Olive.Libraries.Providers.APC",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-ludus/libraries/olive.libraries.providers.apc.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-ludus/libraries/olive.libraries.providers.apc.git",
+              "default_branch": "main"
+            },
+            {
+              "name": "Olive.Libraries.Rewards",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-ludus/libraries/olive.libraries.rewards.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-ludus/libraries/olive.libraries.rewards.git",
+              "default_branch": "master"
+            },
+            {
+              "name": "Olive.Libraries.Salesforce",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-ludus/libraries/olive.libraries.salesforce.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-ludus/libraries/olive.libraries.salesforce.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive.libraries.avalara",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-ludus/libraries/olive.business.avalara.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-ludus/libraries/olive.business.avalara.git",
+              "default_branch": "main"
+            },
+            {
+              "name": "olive.libraries.budco",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-ludus/libraries/olive.libraries.budco.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-ludus/libraries/olive.libraries.budco.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive.libraries.configuration",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-ludus/libraries/olive.libraries.configuration.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-ludus/libraries/olive.libraries.configuration.git",
+              "default_branch": "main"
+            },
+            {
+              "name": "olive.libraries.contract",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-ludus/libraries/olive.libraries.contract.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-ludus/libraries/olive.libraries.contract.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive.libraries.datalake",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-ludus/libraries/olive.libraries.datalake.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-ludus/libraries/olive.libraries.datalake.git",
+              "default_branch": "main"
+            },
+            {
+              "name": "olive.libraries.ford-contract",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-ludus/libraries/olive.libraries.ford-contract.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-ludus/libraries/olive.libraries.ford-contract.git",
+              "default_branch": "main"
+            },
+            {
+              "name": "olive.libraries.fordcontract",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-ludus/libraries/olive.libraries.fordcontract.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-ludus/libraries/olive.libraries.fordcontract.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive.libraries.interfaces",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-ludus/libraries/olive.libraries.interfaces.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-ludus/libraries/olive.libraries.interfaces.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive.libraries.moparcontract",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-ludus/libraries/olive.libraries.moparcontract.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-ludus/libraries/olive.libraries.moparcontract.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive.libraries.partners.accountnet",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-ludus/libraries/olive.libraries.partners.accountnet.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-ludus/libraries/olive.libraries.partners.accountnet.git",
+              "default_branch": "main"
+            },
+            {
+              "name": "olive.libraries.payeezy",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-ludus/libraries/olive.libraries.payeezy.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-ludus/libraries/olive.libraries.payeezy.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive.libraries.payment",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-ludus/libraries/olive.libraries.payment.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-ludus/libraries/olive.libraries.payment.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive.libraries.providers.ford",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-ludus/libraries/olive.libraries.providers.ford.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-ludus/libraries/olive.libraries.providers.ford.git",
+              "default_branch": "main"
+            },
+            {
+              "name": "olive.libraries.providers.qbe",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-ludus/libraries/olive.libraries.providers.qbe.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-ludus/libraries/olive.libraries.providers.qbe.git",
+              "default_branch": "main"
+            },
+            {
+              "name": "olive.libraries.providers.stellantis",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-ludus/libraries/olive.libraries.providers.stellantis.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-ludus/libraries/olive.libraries.providers.stellantis.git",
+              "default_branch": "main"
+            },
+            {
+              "name": "olive.libraries.recommendedproduct",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-ludus/libraries/olive.libraries.recommendedproduct.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-ludus/libraries/olive.libraries.recommendedproduct.git",
+              "default_branch": "main"
+            },
+            {
+              "name": "olive.libraries.rulesengine",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-ludus/libraries/olive.libraries.rulesengine.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-ludus/libraries/olive.libraries.rulesengine.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive.libraries.salesforceORM",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-ludus/libraries/olive.libraries.salesforceorm.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-ludus/libraries/olive.libraries.salesforceorm.git",
+              "default_branch": "main"
+            },
+            {
+              "name": "olive.libraries.salesforceObjects",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-ludus/libraries/olive.libraries.salesforceobjects.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-ludus/libraries/olive.libraries.salesforceobjects.git",
+              "default_branch": "main"
+            },
+            {
+              "name": "olive.libraries.sessionintegration",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-ludus/libraries/olive.libraries.sessionintegration.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-ludus/libraries/olive.libraries.sessionintegration.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive.libraries.statsig",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-ludus/libraries/olive.libraries.statsig.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-ludus/libraries/olive.libraries.statsig.git",
+              "default_branch": "main"
+            },
+            {
+              "name": "olive.libraries.transaction",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-ludus/libraries/olive.libraries.transaction.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-ludus/libraries/olive.libraries.transaction.git",
+              "default_branch": "main"
+            },
+            {
+              "name": "olive.libraries.utilities",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-ludus/libraries/olive.libraries.utilities.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-ludus/libraries/olive.libraries.utilities.git",
+              "default_branch": "main"
+            },
+            {
+              "name": "olive.libreries.CRMIntegration",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-ludus/libraries/olive.libreries.crmintegration.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-ludus/libraries/olive.libreries.crmintegration.git",
+              "default_branch": "development"
+            }
+          ]
+        },
+        {
+          "name": "Microfrontends",
+          "projects": [
+            {
+              "name": "olive-ecommerce-reverse-proxy",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-ludus/microfrontends/olive-ecommerce-reverse-proxy.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-ludus/microfrontends/olive-ecommerce-reverse-proxy.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive-mff-ecommerce-coverage-status",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-ludus/microfrontends/olive-mff-ecommerce-coverage-status.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-ludus/microfrontends/olive-mff-ecommerce-coverage-status.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive-mff-ecommerce-payment",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-ludus/microfrontends/olive-mff-ecommerce-payment.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-ludus/microfrontends/olive-mff-ecommerce-payment.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive-mff-ecommerce-personal-info",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-ludus/microfrontends/olive-mff-ecommerce-personal-info.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-ludus/microfrontends/olive-mff-ecommerce-personal-info.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive-mff-ecommerce-purchase-summary",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-ludus/microfrontends/olive-mff-ecommerce-purchase-summary.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-ludus/microfrontends/olive-mff-ecommerce-purchase-summary.git",
+              "default_branch": "main"
+            },
+            {
+              "name": "olive-mff-ecommerce-shopping-cart",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-ludus/microfrontends/olive-mff-ecommerce-shopping-cart.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-ludus/microfrontends/olive-mff-ecommerce-shopping-cart.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive-mfp-ecommerce-coverage-status",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-ludus/microfrontends/olive-mfp-ecommerce-coverage-status.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-ludus/microfrontends/olive-mfp-ecommerce-coverage-status.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive-mfp-ecommerce-payment",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-ludus/microfrontends/olive-mfp-ecommerce-payment.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-ludus/microfrontends/olive-mfp-ecommerce-payment.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive-mfp-ecommerce-personal-details",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-ludus/microfrontends/olive-mfp-ecommerce-personal-details.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-ludus/microfrontends/olive-mfp-ecommerce-personal-details.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive-mfp-ecommerce-personal-inf",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-ludus/microfrontends/olive-mfp-ecommerce-personal-inf.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-ludus/microfrontends/olive-mfp-ecommerce-personal-inf.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive-mfp-ecommerce-purchase-summary",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-ludus/microfrontends/olive-mfp-ecommerce-purchase-summary.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-ludus/microfrontends/olive-mfp-ecommerce-purchase-summary.git",
+              "default_branch": "development"
+            }
+          ]
+        },
+        {
+          "name": "Microservices",
+          "projects": [
+            {
+              "name": "olive.business.crmintegration",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-ludus/microservices/olive.business.crmintegration.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-ludus/microservices/olive.business.crmintegration.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive.business.eventmanager",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-ludus/microservices/olive.business.eventmanager.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-ludus/microservices/olive.business.eventmanager.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive.business.personalinfo",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-ludus/microservices/olive.business.personalinfo.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-ludus/microservices/olive.business.personalinfo.git",
+              "default_branch": "development"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Team Sharks",
+      "projects": [
+        {
+          "name": "olive-mfp-ecommerce-confirm-vehicle",
+          "url": "git@gitlab.com:uproarcar/olive-com/team-sharks/olive-mfp-ecommerce-confirm-vehicle.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/team-sharks/olive-mfp-ecommerce-confirm-vehicle.git",
+          "default_branch": "development"
+        }
+      ],
+      "groups": [
+        {
+          "name": "Microfrontends",
+          "projects": [
+            {
+              "name": "Olive Mff Ecommerce Customer Vehicle Information",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-sharks/microfrontends/olive-mff-ecommerce-customer-vehicle-information.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-sharks/microfrontends/olive-mff-ecommerce-customer-vehicle-information.git",
+              "default_branch": "master"
+            },
+            {
+              "name": "olive-mff-ecommerce-account-info",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-sharks/microfrontends/olive-mff-ecommerce-account-info.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-sharks/microfrontends/olive-mff-ecommerce-account-info.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive-mff-ecommerce-check-page",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-sharks/microfrontends/olive-mff-ecommerce-check-page.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-sharks/microfrontends/olive-mff-ecommerce-check-page.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive-mff-ecommerce-digital-wallets",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-sharks/microfrontends/olive-mff-ecommerce-digital-wallets.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-sharks/microfrontends/olive-mff-ecommerce-digital-wallets.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive-mff-ecommerce-global-utilities",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-sharks/microfrontends/olive-mff-ecommerce-global-utilities.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-sharks/microfrontends/olive-mff-ecommerce-global-utilities.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive-mff-ecommerce-products-list",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-sharks/microfrontends/olive-mff-ecommerce-products-list.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-sharks/microfrontends/olive-mff-ecommerce-products-list.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive-mff-ecommerce-returning-customer",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-sharks/microfrontends/olive-mff-ecommerce-returning-customer.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-sharks/microfrontends/olive-mff-ecommerce-returning-customer.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive-mff-ecommerce-validate-opportunity",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-sharks/microfrontends/olive-mff-ecommerce-validate-opportunity.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-sharks/microfrontends/olive-mff-ecommerce-validate-opportunity.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive-mff-ecommerce-vehicle-selection",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-sharks/microfrontends/olive-mff-ecommerce-vehicle-selection.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-sharks/microfrontends/olive-mff-ecommerce-vehicle-selection.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive-mfp-ecommerce-account-info",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-sharks/microfrontends/olive-mfp-ecommerce-account-info.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-sharks/microfrontends/olive-mfp-ecommerce-account-info.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive-mfp-ecommerce-check-page",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-sharks/microfrontends/olive-mfp-ecommerce-check-page.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-sharks/microfrontends/olive-mfp-ecommerce-check-page.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive-mfp-ecommerce-edit-vehicle",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-sharks/microfrontends/olive-mfp-ecommerce-edit-vehicle.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-sharks/microfrontends/olive-mfp-ecommerce-edit-vehicle.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive-mfp-ecommerce-pages-core",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-sharks/microfrontends/olive-mfp-ecommerce-pages-core.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-sharks/microfrontends/olive-mfp-ecommerce-pages-core.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive-mfp-ecommerce-payment-method",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-sharks/microfrontends/olive-mfp-ecommerce-payment-method.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-sharks/microfrontends/olive-mfp-ecommerce-payment-method.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive-mfp-ecommerce-quote-result",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-sharks/microfrontends/olive-mfp-ecommerce-quote-result.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-sharks/microfrontends/olive-mfp-ecommerce-quote-result.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive-mfp-ecommerce-returning-customer",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-sharks/microfrontends/olive-mfp-ecommerce-returning-customer.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-sharks/microfrontends/olive-mfp-ecommerce-returning-customer.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive-mfp-ecommerce-validate-opportunity",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-sharks/microfrontends/olive-mfp-ecommerce-validate-opportunity.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-sharks/microfrontends/olive-mfp-ecommerce-validate-opportunity.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive-mfp-ecommerce-vehicle-selection",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-sharks/microfrontends/olive-mfp-ecommerce-vehicle-selection.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-sharks/microfrontends/olive-mfp-ecommerce-vehicle-selection.git",
+              "default_branch": "development"
+            }
+          ]
+        },
+        {
+          "name": "Microservices",
+          "projects": [
+            {
+              "name": "Olive.Business.RulesEngine",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-sharks/microservices/olive.business.rulesengine.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-sharks/microservices/olive.business.rulesengine.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "Olive.Business.VehicleManager",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-sharks/microservices/olive.business.vehiclemanager.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-sharks/microservices/olive.business.vehiclemanager.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "Olive.Business.Vehicleselection",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-sharks/microservices/olive.business.vehicleselection.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-sharks/microservices/olive.business.vehicleselection.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive-machine-learning-api",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-sharks/microservices/olive-machine-learning-api.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-sharks/microservices/olive-machine-learning-api.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive.business.cancellation",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-sharks/microservices/olive.business.cancellation.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-sharks/microservices/olive.business.cancellation.git",
+              "default_branch": "master"
+            },
+            {
+              "name": "olive.business.product",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-sharks/microservices/olive.business.product.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-sharks/microservices/olive.business.product.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive.business.quote",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-sharks/microservices/olive.business.quote.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-sharks/microservices/olive.business.quote.git",
+              "default_branch": "master"
+            },
+            {
+              "name": "olive.business.renewal",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-sharks/microservices/olive.business.renewal.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-sharks/microservices/olive.business.renewal.git",
+              "default_branch": "master"
+            },
+            {
+              "name": "olive.business.session",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-sharks/microservices/olive.business.session.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-sharks/microservices/olive.business.session.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "olive.business.supplement",
+              "url": "git@gitlab.com:uproarcar/olive-com/team-sharks/microservices/olive.business.supplement.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/team-sharks/microservices/olive.business.supplement.git",
+              "default_branch": "master"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Third Party Integrators",
+      "projects": [
+        {
+          "name": "olive.integrators.ford",
+          "url": "git@gitlab.com:uproarcar/olive-com/third-party-integrators/olive.integrators.ford.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/third-party-integrators/olive.integrators.ford.git",
+          "default_branch": "master"
+        }
+      ]
+    },
+    {
+      "name": "Tools",
+      "projects": [
+        {
+          "name": "Olive Boilerplate Library",
+          "url": "git@gitlab.com:uproarcar/olive-com/tools/olive-boilerplate-library.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/tools/olive-boilerplate-library.git",
+          "default_branch": "master"
+        },
+        {
+          "name": "Olive Library Ui",
+          "url": "git@gitlab.com:uproarcar/olive-com/tools/olive-library-ui.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/tools/olive-library-ui.git",
+          "default_branch": "development"
+        },
+        {
+          "name": "olive.business.configuration",
+          "url": "git@gitlab.com:uproarcar/olive-com/tools/olive.business.configuration.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/tools/olive.business.configuration.git",
+          "default_branch": "development"
+        }
+      ],
+      "groups": [
+        {
+          "name": "Libraries",
+          "projects": [
+            {
+              "name": "OEM-SF",
+              "url": "git@gitlab.com:uproarcar/olive-com/tools/libraries/OEM-SF.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/tools/libraries/OEM-SF.git",
+              "default_branch": "main"
+            },
+            {
+              "name": "Olive.Business.FullDataone",
+              "url": "git@gitlab.com:uproarcar/olive-com/tools/libraries/olive.business.fulldataone.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/tools/libraries/olive.business.fulldataone.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "Olive.Libraries.Carfax",
+              "url": "git@gitlab.com:uproarcar/olive-com/tools/libraries/olive.libraries.carfax.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/tools/libraries/olive.libraries.carfax.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "Olive.Libraries.ConfigurationProviders",
+              "url": "git@gitlab.com:uproarcar/olive-com/tools/libraries/olive.libraries.configurationproviders.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/tools/libraries/olive.libraries.configurationproviders.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "Olive.Libraries.DataOneWrap",
+              "url": "git@gitlab.com:uproarcar/olive-com/tools/libraries/olive.libraries.dataonewrap.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/tools/libraries/olive.libraries.dataonewrap.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "Olive.Libraries.Evox",
+              "url": "git@gitlab.com:uproarcar/olive-com/tools/libraries/olive.libraries.evox.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/tools/libraries/olive.libraries.evox.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "Olive.Libraries.SessionSdk",
+              "url": "git@gitlab.com:uproarcar/olive-com/tools/libraries/olive.libraries.sessionsdk.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/tools/libraries/olive.libraries.sessionsdk.git",
+              "default_branch": "master"
+            },
+            {
+              "name": "Olive.Libraries.SessionWrap",
+              "url": "git@gitlab.com:uproarcar/olive-com/tools/libraries/olive.libraries.sessionwrap.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/tools/libraries/olive.libraries.sessionwrap.git",
+              "default_branch": "development"
+            },
+            {
+              "name": "Olive.Libraries.Utils",
+              "url": "git@gitlab.com:uproarcar/olive-com/tools/libraries/olive.libraries.utils.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/tools/libraries/olive.libraries.utils.git",
+              "default_branch": "master"
+            }
+          ]
+        },
+        {
+          "name": "Routing",
+          "projects": [
+            {
+              "name": "olive.business.payment",
+              "url": "git@gitlab.com:uproarcar/olive-com/tools/routing/olive.business.payment.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/tools/routing/olive.business.payment.git",
+              "default_branch": "main"
+            },
+            {
+              "name": "olive.business.postpurchase",
+              "url": "git@gitlab.com:uproarcar/olive-com/tools/routing/olive.business.postpurchase.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/tools/routing/olive.business.postpurchase.git",
+              "default_branch": "main"
+            },
+            {
+              "name": "olive.business.tools",
+              "url": "git@gitlab.com:uproarcar/olive-com/tools/routing/olive.business.tools.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/tools/routing/olive.business.tools.git",
+              "default_branch": "main"
+            },
+            {
+              "name": "routing-system",
+              "url": "git@gitlab.com:uproarcar/olive-com/tools/routing/routing-system.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/tools/routing/routing-system.git",
+              "default_branch": "main"
+            }
+          ]
+        },
+        {
+          "name": "Sales",
+          "projects": [
+            {
+              "name": "olive.business.salessearcher",
+              "url": "git@gitlab.com:uproarcar/olive-com/tools/sales/olive.business.salessearcher.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/tools/sales/olive.business.salessearcher.git",
+              "default_branch": "main"
+            }
+          ]
+        },
+        {
+          "name": "Serverless",
+          "projects": [
+            {
+              "name": "financing",
+              "url": "git@gitlab.com:uproarcar/olive-com/tools/serverless/financing.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/tools/serverless/financing.git",
+              "default_branch": "main"
+            },
+            {
+              "name": "payment-verifier",
+              "url": "git@gitlab.com:uproarcar/olive-com/tools/serverless/payment-verifier.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/tools/serverless/payment-verifier.git",
+              "default_branch": "main"
+            },
+            {
+              "name": "pull-opportunity",
+              "url": "git@gitlab.com:uproarcar/olive-com/tools/serverless/pull-opportunity.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/tools/serverless/pull-opportunity.git",
+              "default_branch": "main"
+            },
+            {
+              "name": "purchase-audit",
+              "url": "git@gitlab.com:uproarcar/olive-com/tools/serverless/purchase-audit.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/tools/serverless/purchase-audit.git",
+              "default_branch": "main"
+            },
+            {
+              "name": "return-commission-load",
+              "url": "git@gitlab.com:uproarcar/olive-com/tools/serverless/return-commission-load.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/tools/serverless/return-commission-load.git",
+              "default_branch": "main"
+            },
+            {
+              "name": "sftp-to-sf",
+              "url": "git@gitlab.com:uproarcar/olive-com/tools/serverless/sftp-to-sf.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/tools/serverless/sftp-to-sf.git",
+              "default_branch": "main"
+            },
+            {
+              "name": "sftp-uploader",
+              "url": "git@gitlab.com:uproarcar/olive-com/tools/serverless/sftp-uploader.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/tools/serverless/sftp-uploader.git",
+              "default_branch": "main"
+            }
+          ]
+        },
+        {
+          "name": "Testing",
+          "projects": [
+            {
+              "name": "olive-ecommerce-customer-emulator",
+              "url": "git@gitlab.com:uproarcar/olive-com/tools/testing/olive-ecommerce-customer-emulator.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/tools/testing/olive-ecommerce-customer-emulator.git",
+              "default_branch": "master"
+            },
+            {
+              "name": "olive.tool.e2e",
+              "url": "git@gitlab.com:uproarcar/olive-com/tools/testing/olive.tool.e2e.git",
+              "http_url": "https://gitlab.com/uproarcar/olive-com/tools/testing/olive.tool.e2e.git",
+              "default_branch": "main"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "datascience",
+      "projects": [
+        {
+          "name": "ai_calls",
+          "url": "git@gitlab.com:uproarcar/olive-com/datascience/ai_calls_ford.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/datascience/ai_calls_ford.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "ai_marketing",
+          "url": "git@gitlab.com:uproarcar/olive-com/datascience/ai_marketing.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/datascience/ai_marketing.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "alert_system",
+          "url": "git@gitlab.com:uproarcar/olive-com/datascience/alert_system.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/datascience/alert_system.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "bad_words",
+          "url": "git@gitlab.com:uproarcar/olive-com/datascience/bad_words.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/datascience/bad_words.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "churn",
+          "url": "git@gitlab.com:uproarcar/olive-com/datascience/churn.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/datascience/churn.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "ls_fca_oem_mvp",
+          "url": "git@gitlab.com:uproarcar/olive-com/datascience/ls_fca_oem_mvp.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/datascience/ls_fca_oem_mvp.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "ls_ford_exp",
+          "url": "git@gitlab.com:uproarcar/olive-com/datascience/ls_ford_exp.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/datascience/ls_ford_exp.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "ls_ford_oem_csp",
+          "url": "git@gitlab.com:uproarcar/olive-com/datascience/ls_ford_oem_csp.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/datascience/ls_ford_oem_csp.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "price_prophet_fca",
+          "url": "git@gitlab.com:uproarcar/olive-com/datascience/price_prophet_fca.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/datascience/price_prophet_fca.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "price_prophet_ford",
+          "url": "git@gitlab.com:uproarcar/olive-com/datascience/price_prophet_ford.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/datascience/price_prophet_ford.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "segments_fca",
+          "url": "git@gitlab.com:uproarcar/olive-com/datascience/segments_fca.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/datascience/segments_fca.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "segments_ford",
+          "url": "git@gitlab.com:uproarcar/olive-com/datascience/segments.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/datascience/segments.git",
+          "default_branch": "main"
+        }
+      ]
+    },
+    {
+      "name": "ml",
+      "projects": [
+        {
+          "name": "deleted_ford_oem_csp_ls",
+          "url": "git@gitlab.com:uproarcar/olive-com/ml/ford_oem_csp_ls.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/ml/ford_oem_csp_ls.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "fca_oem_mvp_lsm",
+          "url": "git@gitlab.com:uproarcar/olive-com/ml/fca_oem_mvp_lsm.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/ml/fca_oem_mvp_lsm.git",
+          "default_branch": "main"
+        },
+        {
+          "name": "ford_exp_lead_scoring_dm",
+          "url": "git@gitlab.com:uproarcar/olive-com/ml/ford_exp_lead_scoring_dm.git",
+          "http_url": "https://gitlab.com/uproarcar/olive-com/ml/ford_exp_lead_scoring_dm.git",
+          "default_branch": "main"
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "devops",
+      "url": "git@gitlab.com:uproarcar/olive-com/devops.git",
+      "http_url": "https://gitlab.com/uproarcar/olive-com/devops.git",
+      "default_branch": "development"
+    },
+    {
+      "name": "robocop",
+      "url": "git@gitlab.com:uproarcar/olive-com/robocop.git",
+      "http_url": "https://gitlab.com/uproarcar/olive-com/robocop.git",
+      "default_branch": "main"
+    }
+  ]
+}
