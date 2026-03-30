@@ -32,7 +32,8 @@
       "Bash(git:*)",
       "Bash(bash mac-setup.sh --dry-run --section symlinks 2>&1)",
       "Bash(bash mac-setup.sh --section mas 2>&1)",
-      "Bash(mas install:*)"
+      "Bash(mas install:*)",
+      "Bash(bash scripts/github-inventory.sh --output github-projects-inventory.json 2>&1)"
     ]
   }
 }

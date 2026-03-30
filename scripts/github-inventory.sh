@@ -36,6 +36,13 @@ Options:
   --user <username>    GitHub username (default: authenticated user)
   --help               Show this help message
 
+Grouping:
+  Repos are grouped by their GitHub topics. Repos without topics go into "Uncategorized".
+  If a repo has multiple topics, it appears under the first one alphabetically.
+
+  To add topics to a repo:
+    gh repo edit <user>/<repo> --add-topic <topic>
+
 Examples:
   bash github-inventory.sh                          # Generate inventory
   bash github-inventory.sh --include-forks          # Include forks
@@ -114,7 +121,7 @@ trap 'rm -f "$TMPFILE"' EXIT
 
 gh repo list "$USERNAME" \
   --limit 500 \
-  --json name,url,sshUrl,defaultBranchRef,description,isFork,isPrivate,primaryLanguage,createdAt,updatedAt \
+  --json name,url,sshUrl,defaultBranchRef,description,isFork,isPrivate,repositoryTopics \
   > "$TMPFILE" 2>/dev/null
 
 if [ ! -s "$TMPFILE" ]; then
@@ -143,58 +150,48 @@ include_forks = include_forks_str == "True"
 # Filter forks if needed
 repos = [r for r in raw if include_forks or not r.get("isFork", False)]
 
-# Categorize by primary language
-by_language = defaultdict(list)
+# Group by first topic (alphabetically), or "Uncategorized"
+by_topic = defaultdict(list)
 for repo in repos:
-    lang = repo.get("primaryLanguage")
-    lang_name = lang["name"] if lang else "Other"
-    by_language[lang_name].append(repo)
+    raw_topics = repo.get("repositoryTopics") or []
+    topics = sorted([t["name"] for t in raw_topics if isinstance(t, dict) and "name" in t])
+    group_name = topics[0].replace("-", " ").title() if topics else "Uncategorized"
+    by_topic[group_name].append(repo)
 
-# Build groups
+# Build groups matching projects-inventory.json structure
 groups = []
-for lang_name in sorted(by_language.keys()):
-    lang_repos = by_language[lang_name]
+for group_name in sorted(by_topic.keys()):
+    group_repos = by_topic[group_name]
     projects = []
-    for r in sorted(lang_repos, key=lambda x: x["name"].lower()):
+    for r in sorted(group_repos, key=lambda x: x["name"].lower()):
         project = {
             "name": r["name"],
-            "description": r.get("description") or "",
             "url": r["sshUrl"],
             "http_url": r["url"],
-            "default_branch": r["defaultBranchRef"]["name"] if r.get("defaultBranchRef") else "main",
-            "is_private": r.get("isPrivate", False),
-            "is_fork": r.get("isFork", False),
-            "created_at": r.get("createdAt", ""),
-            "updated_at": r.get("updatedAt", "")
+            "default_branch": r["defaultBranchRef"]["name"] if r.get("defaultBranchRef") else "main"
         }
         projects.append(project)
     groups.append({
-        "name": lang_name,
+        "name": group_name,
         "projects": projects
     })
 
-inventory = {
-    "source": "github",
-    "owner": username,
-    "total_repos": len(repos),
-    "total_own": len([r for r in repos if not r.get("isFork", False)]),
-    "total_forks": len([r for r in repos if r.get("isFork", False)]),
-    "groups": groups
-}
+inventory = {"groups": groups}
 
 output = json.dumps(inventory, indent=2, ensure_ascii=False)
 
 with open(output_file, "w") as f:
     f.write(output + "\n")
 
-print(output[:200] + "...")
-print()
-
 # Print summary
-print(f"  Total repos: {inventory['total_repos']}")
-print(f"  Own repos: {inventory['total_own']}")
-print(f"  Forks: {inventory['total_forks']}")
-print(f"  Languages: {len(groups)}")
+total = len(repos)
+grouped = sum(1 for r in repos if any(t["name"] for t in (r.get("repositoryTopics") or []) if isinstance(t, dict)))
+ungrouped = total - grouped
+
+print(f"  Total repos: {total}")
+print(f"  With topics: {grouped}")
+print(f"  Uncategorized: {ungrouped}")
+print(f"  Groups: {len(groups)}")
 print()
 for g in groups:
     print(f"    {g['name']}: {len(g['projects'])} repos")
