@@ -33,7 +33,12 @@
       "Bash(bash mac-setup.sh --dry-run --section symlinks 2>&1)",
       "Bash(bash mac-setup.sh --section mas 2>&1)",
       "Bash(mas install:*)",
-      "Bash(bash scripts/github-inventory.sh --output github-projects-inventory.json 2>&1)"
+      "Bash(bash scripts/github-inventory.sh --output github-projects-inventory.json 2>&1)",
+      "Bash(bash scripts/github-inventory.sh --orgs vennet-developers,plata-system --output github-projects-inventory.json 2>&1)",
+      "Bash(python3:*)",
+      "Bash(gh api:*)",
+      "Bash(bash scripts/github-inventory.sh --include-orgs --output github-projects-inventory.json 2>&1)",
+      "Bash(bash scripts/github-inventory.sh 2>&1)"
     ]
   }
 }

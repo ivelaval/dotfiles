@@ -318,6 +318,82 @@
           "default_branch": "master"
         }
       ]
+    },
+    {
+      "name": "Org: vennet-developers",
+      "projects": [
+        {
+          "name": "awscook",
+          "url": "git@github.com:vennet-developers/awscook.git",
+          "http_url": "https://github.com/vennet-developers/awscook",
+          "default_branch": "main"
+        },
+        {
+          "name": "gitcook",
+          "url": "git@github.com:vennet-developers/gitcook.git",
+          "http_url": "https://github.com/vennet-developers/gitcook",
+          "default_branch": "main"
+        },
+        {
+          "name": "olacrianza-website",
+          "url": "git@github.com:vennet-developers/olacrianza-website.git",
+          "http_url": "https://github.com/vennet-developers/olacrianza-website",
+          "default_branch": "main"
+        },
+        {
+          "name": "spider-site",
+          "url": "git@github.com:vennet-developers/spider-site.git",
+          "http_url": "https://github.com/vennet-developers/spider-site",
+          "default_branch": "main"
+        },
+        {
+          "name": "ui-kit",
+          "url": "git@github.com:vennet-developers/ui-kit.git",
+          "http_url": "https://github.com/vennet-developers/ui-kit",
+          "default_branch": "master"
+        },
+        {
+          "name": "vennet-identity",
+          "url": "git@github.com:vennet-developers/vennet-identity.git",
+          "http_url": "https://github.com/vennet-developers/vennet-identity",
+          "default_branch": "main"
+        },
+        {
+          "name": "web-site",
+          "url": "git@github.com:vennet-developers/web-site.git",
+          "http_url": "https://github.com/vennet-developers/web-site",
+          "default_branch": "main"
+        }
+      ]
+    },
+    {
+      "name": "Org: plata-system",
+      "projects": [
+        {
+          "name": "plata.microservice.core",
+          "url": "git@github.com:plata-system/plata.microservice.core.git",
+          "http_url": "https://github.com/plata-system/plata.microservice.core",
+          "default_branch": "main"
+        },
+        {
+          "name": "plata.microservice.identity",
+          "url": "git@github.com:plata-system/plata.microservice.identity.git",
+          "http_url": "https://github.com/plata-system/plata.microservice.identity",
+          "default_branch": "main"
+        },
+        {
+          "name": "plata.microservice.user",
+          "url": "git@github.com:plata-system/plata.microservice.user.git",
+          "http_url": "https://github.com/plata-system/plata.microservice.user",
+          "default_branch": "main"
+        },
+        {
+          "name": "plata.web.dashboard",
+          "url": "git@github.com:plata-system/plata.web.dashboard.git",
+          "http_url": "https://github.com/plata-system/plata.web.dashboard",
+          "default_branch": "main"
+        }
+      ]
     }
   ]
 }
